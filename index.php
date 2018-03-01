@@ -19,7 +19,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="garden row">
 		<div class="column middle">
 			<h3>Envie de jardiner ?</h3>

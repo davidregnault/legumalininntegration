@@ -290,7 +290,7 @@ aside img {
 
 .accueil nav {
 	width: 100%;
-	height: 30%;
+	height: 35%;
     position:relative;
 }
 .accueil header ul li {
@@ -321,7 +321,7 @@ aside img {
 	margin-top: 0;
 }
 .accueil nav img {
-	width: 20%;
+	width: 18%;
 	z-index: 3;
     position:absolute;
 }
@@ -437,7 +437,7 @@ aside img {
 	background-color: white;
 	border-radius: 10px;
 	justify-content: space-around;
-	box-shadow: 1px 1px 1px;
+	box-shadow: 1px 1px 1px grey;
 }
 .garden div.button {
 margin-top: 8%;
@@ -538,7 +538,7 @@ margin-bottom: 10%;
 	flex-direction: column;
 	border-radius: 20px;
 	background-color: white;
-	box-shadow: 1px 1px 1px;
+	box-shadow: 1px 1px 1px grey;
 }
 .shop > div.row > div > div:first-child {
 	height: 55%;
@@ -609,7 +609,7 @@ margin-bottom: 10%;
 .newsletter input {
 	width: 50%;
 	padding-left: 3px;
-	height: 50%;
+	height: 30%;
 	font-size: 1.2em;
 }
 .newsletter .btn {
@@ -623,8 +623,7 @@ margin-bottom: 10%;
 
 /* PAGE BOUTIQUE */
 
-
-.boutique header section, .produit header section {
+.section_filtre {
 	height: 70%;
 	width: 100%;
 	background-image: url(../img/homepage_head.jpg);
@@ -632,31 +631,31 @@ margin-bottom: 10%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.boutique header section > div, .produit header section > div {
+.section_filtre > div {
 	width: 40%;
 	height: 70%;
 }
-.boutique header section > div:last-child, .produit header section > div:last-child {
+.section_filtre > div:last-child {
 	width: 50%;
 	height: 70%;
 }
-.boutique header section > div > input, .produit header section > div > input{
+.section_filtre > div > input{
 	width: 70%;
 	height: 20%;
 	padding-left: 5px;
 	border-radius: 5px;
 	border: none;
 }
-.boutique header section > div:last-child > div:last-child{
+.section_filtre > div:last-child > div:last-child{
 	height: 50%;
 }
-.boutique header section > div:last-child > div:last-child > div:first-child{
+.section_filtre > div:last-child > div:last-child > div:first-child{
 	width: 40%;
 }
-.boutique header section > div:last-child > div:last-child > div:last-child{
+.section_filtre > div:last-child > div:last-child > div:last-child{
 	width: 55%;
 }
-.boutique header section > div:last-child > div:last-child > div{
+.section_filtre > div:last-child > div:last-child > div{
 	height: 100%;
 }
 .boutique .filtres_boutique {
@@ -665,12 +664,12 @@ margin-bottom: 10%;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.boutique .filtres_boutique span{
+.section_filtre .filtres_boutique span{
 	color: white;
 	font-size: 1.5em;
 
 }
-.boutique .filtres_boutique > div > div{
+.section_filtre .filtres_boutique > div > div{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 20%;
@@ -681,21 +680,21 @@ margin-bottom: 10%;
 	border-radius: 3px;
 	font-size: 0.8em;
 }
-.boutique .filtres_boutique:first-child > div > div{
+.section_filtre .filtres_boutique:first-child > div > div{
 	width: 25%;
 }
-.boutique .filtres_boutique:last-child > div > div{
+.section_filtre .filtres_boutique:last-child > div > div{
 	width: 20%;
 }
-.boutique .produit_boutique {
+.section_filtre .produit_boutique {
 	width: 25%;
 	height: 25%;
 }
-.boutique .produit_boutique > div:last-child{
+.section_filtre .produit_boutique > div:last-child{
 	position: relative;
 	z-index: 3
 }
-.boutique .produit_boutique img{
+.section_filtre .produit_boutique img{
 	width: 100%;
 	height: 100%;
 }

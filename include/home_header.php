@@ -3,11 +3,11 @@
         <ul class="row middle">
             <li><a href="">forum</a></li>
             <li><a href="">tutoriels</a></li>
-            <li><a href="a-propos.html">a propos</a></li>
-            <li id="img-nav" class="row middle"><img src="img/legumalin_etiquette.png" /></li>
+            <li><a href="a-propos.php">a propos</a></li>
+            <li id="img-nav" class="row middle"><a href="index.php"><img src="img/legumalin_etiquette.png" /></a></li>
             <li><a href="">nos jardins</a></li>
             <li><a href="">actualites</a></li>
-            <li><a href="boutique.html">boutique</a></li>
+            <li><a href="boutique.php">boutique</a></li>
         </ul>
     </nav>
 

@@ -19,7 +19,7 @@
         <ul><a href="#">Faq</a></ul>
         <ul><a href="#">Mentions légales</a></ul>
         <ul><a href="#">CGU</a></ul>
-        <ul><a href="#">Plan du site</a></ul>
+        <ul><a href="plan_Legumalin.php">Plan du site</a></ul>
         </li>
         </div>
 </footer> 

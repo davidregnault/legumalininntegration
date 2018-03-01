@@ -11,7 +11,7 @@
 
 <?php include "include/header.php"; ?>
 
-<section class="row middle">
+<section class="row middle section_filtre">
 			<div class="column between">
 				<h1>La boutique</h1>
 				<input type="" name="">
