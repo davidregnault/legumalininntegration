@@ -7,7 +7,7 @@
 	<title>Légumalin - Accueil</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="accueil">
+<body class="plan_legumalin">
 	
 <?php include "include/header.php"; ?>
 

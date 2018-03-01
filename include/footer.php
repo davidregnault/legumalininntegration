@@ -1,25 +1,33 @@
 <footer>
+    <section class="row middle newsletter">
+        <div class="row middle around">
+            <div>S'INSCRIRE A LA NEWSLETTER ?</div>
+            <input type="email" name="newsletter" placeholder="Adresse mail">
+            <div class="btn green-btn"><a href="">S'inscrire</a></div>
+        </div>
+    </section>
+    <div class="row middle">
 		<div class="footer_part filet">
-        <li class="footer_justify_right">
-        <ul><a href="#">Partenaires</a></ul>
-        <ul><a href="#">Ils en parlent</a></ul>
-        </li>
+            <ul class="footer_justify_right">
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="#">Ils en parlent</a></li>
+            </ul>
         </div>
     
 		<div class="footer_part filet">
-        <li>
-        <ul class="footer_social_media"><img src="img/reseaux_sociaux_fb.png"><img src="img/reseaux_sociaux_insta.png"><img src="img/reseaux_sociaux_twitter.png"></ul>
-        <ul class="footer_center"><a href="contact.php">Nous contacter</a></ul>
-        </li>
-        
+            <ul>
+                <li class="footer_social_media"><img src="img/reseaux_sociaux_fb.png"><img src="img/reseaux_sociaux_insta.png"><img src="img/reseaux_sociaux_twitter.png"></li>
+                <li class="footer_center"><a href="contact.php">Nous contacter</a></li>
+            </ul>
         </div>
     
 		<div class="footer_part">
-    <li class="footer_justify_left">
-        <ul><a href="#">Faq</a></ul>
-        <ul><a href="#">Mentions légales</a></ul>
-        <ul><a href="#">CGU</a></ul>
-        <ul><a href="plan_Legumalin.php">Plan du site</a></ul>
-        </li>
+            <ul class="footer_justify_left">
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">CGU</a></li>
+                <li><a href="plan_Legumalin.php">Plan du site</a></li>
+            </ul>
         </div>
+    </div>
 </footer> 

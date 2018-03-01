@@ -6,9 +6,13 @@
 	margin: 0;
 	padding: 0;
 }
-
+html {
+	height: 100%;
+}
 body {
     background-color: #E6E6E6;
+    position: relative;
+    height: 100%;
 }
 
 ul {
@@ -130,11 +134,18 @@ height: 75px;
 
 footer {
 	width: 100%;
-	height: 20vh;
+	height: 25vh;
 	background-color: #343434;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+footer > div {
+	width: 100%;
+	height: 90%;
 }
 
 .footer_part {
@@ -157,10 +168,12 @@ footer a {
     color: white;
     font-size: 18pts;
     font-weight: bold;
-    
+}
+footer a:hover {
+    text-decoration: underline;
 }
 
-footer li {
+footer ul {
     width: 100%;
     list-style: none;
     display: flex;
@@ -169,7 +182,7 @@ footer li {
     text-align:center;
 }
 
-footer ul {
+footer li {
     margin: 10px 10px 10px 0px;
     display:flex;
     justify-content: center;
@@ -185,8 +198,8 @@ justify-content: space-around;
 }
 
 .footer_social_media img{
-    width:80px;  
-    height:80px; 
+    width:70px;  
+    height:70px; 
 }
 
 .footer_justify_left{
@@ -957,6 +970,15 @@ button {
 .contact_p {
     padding: 10px;
     margin: 10px;
+}
+
+/* PAGE PLAN DU SITE */
+
+
+.plan_legumalin main{
+	background-image: url(../img/bg_plan_legumalin.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 

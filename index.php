@@ -111,14 +111,6 @@
 		</div>
 	</section>
 
-	<section class="row middle newsletter">
-		<div class="row middle around">
-			<div>S'INSCRIRE A LA NEWSLETTER ?</div>
-			<input type="email" name="newsletter" placeholder="Adresse mail">
-			<div class="btn green-btn"><a href="">S'inscrire</a></div>
-		</div>
-	</section>
-
 
 <?php include "include/footer.php"; ?>
 <script src="js/script.js"></script>
