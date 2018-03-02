@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta description="Boutique">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Légumalin - Boutique</title>
+	<title>Légumalin - "produit"</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="produit">

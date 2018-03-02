@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page type Légumalin</title>
+    <title>Légumalin - Contact</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>

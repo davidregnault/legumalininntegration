@@ -618,7 +618,7 @@ margin-bottom: 10%;
 
 /* Newsletter */
 .newsletter {
-	width: 100%;
+	width: 100% !important;
 	height: 10vh;
 	background-image: url(../img/newsletter.jpg);
 	background-repeat: no-repeat;

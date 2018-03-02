@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta description="Bonjour">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Légumalin - Accueil</title>
+	<title>Légumalin - Plan du site</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="plan_legumalin">
