@@ -11,19 +11,19 @@
 
 <?php include "include/header.php"; ?>
 
-<section class="row middle">
-			<div class="column between">
-				<h1>La boutique</h1>
-				<input type="" name="">
-			</div>
-			<div class="column between">
-			</div>
-		</section>
+	<section class="row middle section_filtre">
+		<div class="column between">
+			<h1>La boutique</h1>
+			<input type="" name="">
+		</div>
+		<div class="column between">
+		</div>
+	</section>
 
 
 	<main class="column">
 		<div class="column">
-			<div class="row middle retour_produits"><img src="img/left-arrow.svg"><span>Retour</span></div>
+			<div class="row middle retour_produits"><a class="row middle around" href=""><img src="img/left-arrow.svg"><div>Retour</div></a></div>
 		</div>
 		<section class="fiche_produit">
 			<div class="row">
@@ -32,7 +32,7 @@
 			<div class="column">
 				<span class="column between">
 					<h2>Graine</h2>
-					<h3>Graines nnaturels</h3>
+					<h3>Graines naturels</h3>
 				</span>
 				<span class="column around">
 					<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte</p>

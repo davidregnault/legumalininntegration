@@ -11,34 +11,34 @@
 
 <?php include "include/header.php"; ?>
 
-<section class="row middle section_filtre">
-			<div class="column between">
-				<h1>La boutique</h1>
-				<input type="" name="">
-			</div>
-			<div class="column between">
-				<div></div>
-				<div class="row between">
-					<div class="filtres_boutique">
-						<span>Filtres</span>
-						<div class="row between">
-							<div>Engrais</div>
-							<div>Graines</div>
-							<div>Matériel</div>
-						</div>
+	<section class="row middle section_filtre">
+		<div class="column between">
+			<h1>La boutique</h1>
+			<input type="" name="">
+		</div>
+		<div class="column between">
+			<div></div>
+			<div class="row between">
+				<div class="filtres_boutique">
+					<span>Filtres</span>
+					<div class="row between">
+						<div>Engrais</div>
+						<div>Graines</div>
+						<div>Matériel</div>
 					</div>
-					<div class="filtres_boutique">
-						<span>Par saison</span>
-						<div class="row between">
-							<div>Automne</div>
-							<div>Hiver</div>
-							<div>Printemps</div>
-							<div>Eté</div>
-						</div>
+				</div>
+				<div class="filtres_boutique">
+					<span>Par saison</span>
+					<div class="row between">
+						<div>Automne</div>
+						<div>Hiver</div>
+						<div>Printemps</div>
+						<div>Eté</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 		<main>
 			
 		</main>

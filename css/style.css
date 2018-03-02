@@ -36,19 +36,24 @@ a {
 	text-decoration: none;
 }
 section {
-	width: 100%;
+	width: 80%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
+.accueil section {
+	width: 100%;
+}
 h1 {
 	color: white;
 	font-size: 3em;
 	font-family: 'amaranth';
     padding: 5px;
     margin:10px;
+    margin-bottom: 2%;
+	width: 90%;
+	text-align: left;
 }
 
 .h1_marron {
@@ -741,7 +746,7 @@ margin-bottom: 10%;
 	margin-bottom: 3%;
 }
 .produit main img[src="img/left-arrow.svg"] {
-	width: 2%;
+	width: 20%;
 	margin-right: 5px;
 }
 .retour_produits {
@@ -749,6 +754,12 @@ margin-bottom: 10%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	justify-content: flex-start;
+	align-items: center;
+}
+.retour_produits a{
+	color: black;
+	width: initial;
+	width: 10%;
 }
 
 
@@ -998,6 +1009,9 @@ button {
 	background-size: cover;
 	background-position: top;
 }
+.plan_legumalin h1{
+	text-align: center;
+}
 .plan_legumalin main{
 	height: 85vh;
 	margin-top: 10vh;
@@ -1034,11 +1048,18 @@ button {
 .mentions section {
 	width: 80%;
 }
-.mentions h1 {
-	margin-bottom: 2%;
-}
 .mentions p {
 	margin-bottom: 1%;
+}
+
+/* PAGE FAQ */
+
+.faq main {
+	margin-top: 10vh;
+	align-items: center;
+}
+.faq section {
+	width: 80%;
 }
 
 
