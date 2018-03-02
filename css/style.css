@@ -214,12 +214,12 @@ justify-content: space-around;
 /* HEADER */
 
 .type_header {
-	height: 20vh;
+	height: 15vh;
 }
 
 .type_header nav {
-	height: 125px;
 	width: 100%;
+	height: 100%;
     position:relative;
 }
 
@@ -268,7 +268,7 @@ justify-content: space-around;
 }
 aside {
 	position: fixed;
-	top: 14%;
+	top: 12vh;
 	right: 0%; /* -8% en JS */
 	height: 5%;
 	width: 10%;
@@ -646,8 +646,10 @@ margin-bottom: 10%;
 
 /* PAGE BOUTIQUE */
 
+/* HEADER PAGE BOUTIQUE */
+
 .section_filtre {
-	height: 70%;
+	height: 30vh;
 	width: 100%;
 	background-image: url(../img/homepage_head.jpg);
 	background-position: center;
@@ -722,6 +724,11 @@ margin-bottom: 10%;
 	height: 100%;
 }
 
+/* MAIN PAGE BOUTIQUE */
+
+.boutique main {
+	height: 100%;
+}
 
 /* PAGE PRODUIT */
 
@@ -992,7 +999,8 @@ button {
 	background-position: top;
 }
 .plan_legumalin main{
-	height: 80vh;
+	height: 85vh;
+	margin-top: 10vh;
 }
 .plan_legumalin main div{
 	height: 40%;
@@ -1016,6 +1024,21 @@ button {
 }
 .plan_legumalin main div.row {
 	width: 80%;
+}
+
+/* PAGE MENTIONS LEGALES */
+.mentions main {
+	margin-top: 10vh;
+	align-items: center;
+}
+.mentions section {
+	width: 80%;
+}
+.mentions h1 {
+	margin-bottom: 2%;
+}
+.mentions p {
+	margin-bottom: 1%;
 }
 
 
