@@ -23,6 +23,8 @@ main {
 	height: 100%;
     padding-top: 0;
     width: 100%;
+    align-items: center;
+    margin-top: 5vh;
 }
 
 li {
@@ -739,7 +741,6 @@ margin-bottom: 10%;
 
 .produit main {
 	height: 80vh;
-	align-items: center;
 }
 .produit main > div {
 	width: 90%;
@@ -1041,10 +1042,6 @@ button {
 }
 
 /* PAGE MENTIONS LEGALES */
-.mentions main {
-	margin-top: 10vh;
-	align-items: center;
-}
 .mentions section {
 	width: 80%;
 }
@@ -1054,10 +1051,6 @@ button {
 
 /* PAGE FAQ */
 
-.faq main {
-	margin-top: 10vh;
-	align-items: center;
-}
 .faq section {
 	width: 80%;
 }
