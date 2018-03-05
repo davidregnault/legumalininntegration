@@ -16,4 +16,31 @@ var s ='open';
 		});
 
 
-/* SCRIPT */
+/* SCRIPT cookies */
+
+var etatCookies = localStorage.getItem('etatCookies');
+var refuserCookies = document.querySelector('#refuserCookies');
+var accepterCookies = document.querySelector('#accepterCookies');
+var cookies = document.querySelector('#cookies');
+
+if (etatCookies == "accepter") {
+		cookies.classList.add("displayNone");
+	} else if (etatCookies == "refuser") {
+		cookies.classList.add("displayNone");
+	} else if (etatCookies = null) {
+		cookies.classList.remove("displayNone");
+	} 
+
+	refuserCookies.addEventListener('click', function() {
+
+			localStorage.setItem("etatCookies", "refuser");
+			cookies.classList.add("displayNone");
+
+	});
+	accepterCookies.addEventListener('click', function() {
+
+			localStorage.setItem("etatCookies", "accepter");
+			cookies.classList.add("displayNone");
+
+	});
+

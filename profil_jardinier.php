@@ -45,7 +45,8 @@
     
     <div class="profil_jardinier_jardins"></div> 
     
-</main>  
+</main> 
+<?php include "include/cookies.php"; ?>
 <?php include "include/footer.php"; ?>
 <script src="js/script.js"></script>
 </body>

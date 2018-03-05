@@ -1095,6 +1095,74 @@ button {
 	font-weight: 200;
 }
 
+/* PAGE 404 */
+.page_404 {
+		background-color: black;
+}
+.page_404 main{
+	height: 80vh;
+}
+.page_404 h1{
+	text-align: center;
+}
+.page_404 p{
+	color: white;
+}
+
+
+/* PAGE COOKIES */
+
+#cookies {
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 10vh;
+	position: fixed;
+	bottom: 0;
+	color: white;
+}
+#cookies > div {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+#cookies > div > div {
+	height: 80%;
+	width: 60%;
+}
+#cookies > div > div:first-child  {
+	width: 10%;
+}
+#cookies > div > div:last-child {
+	width: 25%;
+}
+#cookies > div > div > h4{
+	height: 30%;
+}
+#cookies > div > div > div{
+	height: 70%;
+}
+#cookies p, #cookies a{
+	font-size: 0.8em;
+	color: white;
+}
+#cookies p {
+	width: 100%;
+}
+#cookies a {
+	text-decoration: underline;
+	width: initial;
+}
+#cookies .cookiesBtn {
+	background-color: white;
+	height: 50%;
+	width: 35%;
+	color: black;
+	border: solid 1px white; 
+}
+#cookies .cookiesBtn:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
 
 
 
@@ -1113,10 +1181,8 @@ button {
 
 
 
-
-
-
-
-
+.displayNone {
+	display: none !important;
+}
 
 
