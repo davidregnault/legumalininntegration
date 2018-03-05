@@ -12,7 +12,55 @@
 
 <main class="column">
 	<h1>Forum (FAQ)</h1>
-	<section></section>
+	<section>
+		<section class="col middle between">
+			
+			<div><h3>Thème des questions</h3></div>
+			<div>
+				<p class="question_forum">La super question sur Légumalin, une question itéressante</p>
+				<p class="reponse_forum">La réponse tout aussi sympa et intéressante, heuresement que nous sommes la !</p>
+			</div>
+
+			<span></span>
+			<div>
+				<p class="question_forum">La super question sur Légumalin, une question itéressante</p>
+				<p class="reponse_forum">La réponse tout aussi sympa et intéressante, heuresement que nous sommes la !</p>
+			</div>
+
+			<span></span>
+			<div>
+				<p class="question_forum">La super question sur Légumalin, une question itéressante</p>
+				<p class="reponse_forum">La réponse tout aussi sympa et intéressante, heuresement que nous sommes la !</p>
+			</div>
+
+		</section>
+		<section class="col middle between">
+
+			<div><h3>Thème des questions</h3></div>
+			<div>
+				<p class="question_forum">La super question sur Légumalin, une question itéressante</p>
+				<p class="reponse_forum">La réponse tout aussi sympa et intéressante, heuresement que nous sommes la !</p>
+			</div>
+
+			<span></span>
+			<div>
+				<p class="question_forum">La super question sur Légumalin, une question itéressante</p>
+				<p class="reponse_forum">La réponse tout aussi sympa et intéressante, heuresement que nous sommes la !</p>
+			</div>
+
+			<span></span>
+			<div>
+				<p class="question_forum">La super question sur Légumalin, une question itéressante</p>
+				<p class="reponse_forum">La réponse tout aussi sympa et intéressante, heuresement que nous sommes la !</p>
+			</div>
+
+			<span></span>
+			<div>
+				<p class="question_forum">La super question sur Légumalin, une question itéressante</p>
+				<p class="reponse_forum">La réponse tout aussi sympa et intéressante, heuresement que nous sommes la !</p>
+			</div>
+		</section>
+	</section>
 </main>
 
 <?php include "include/footer.php"; ?>
