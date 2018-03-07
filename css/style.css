@@ -1093,6 +1093,10 @@ button {
 .faq .question_forum {
 	font-size: 1.5em;
 	font-weight: 200;
+	text-align: center;
+}
+.faq .reponse_forum {
+	text-align: center;
 }
 
 /* PAGE 404 */
