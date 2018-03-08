@@ -35,7 +35,7 @@
                     <img src="img/fruits_contaminés.png" alt="liste_fruits_contaminés">
                 </div>
                 <div class="double_img">
-                    <img src="img/fruits_free.png alt="liste_fruits_free">
+                    <img src="img/fruits_free.png" alt="liste_fruits_free">
                 </div>
             </div>
 
