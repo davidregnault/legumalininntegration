@@ -109,8 +109,17 @@ p {
 }
 
 .btn {
-width: 180px;
-height: 75px;
+	width: 180px;
+	height: 75px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-family: 'Muli', sans-serif;
+    cursor: pointer;
 }
 
 .btn a {
@@ -138,7 +147,45 @@ height: 75px;
 .brown-btn a{
 	background-color: #926755;
 	color: white;
+}input {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'muli';
+    width: 400px;
+    border: 1px solid lightgrey;
 }
+
+input:hover {
+    color: #E2450E;
+    border: 1px solid #E2450E;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'muli';
+    width: 400px;
+}
+
+textarea:hover {
+    color: #E2450E;
+    border: 1px solid #E2450E;
+}
+
+.orange-btn {
+	background-color: #E2450E;
+	color: white;
+}
+
+
+
+
+button {
+    box-shadow:none;
+    border:0 none;
+    outline:0;
+}
+
 
 /* FOOTER */
 
@@ -654,14 +701,20 @@ margin-bottom: 10%;
 }
 
 
-/* PAGE BOUTIQUE */
+/* SECTION FILTRES CATALOGUES */
 
-/* HEADER PAGE BOUTIQUE */
-
-.section_filtre {
+.boutique .section_filtre {
 	height: 30vh;
 	width: 100%;
 	background-image: url(../img/homepage_head.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.catalogue-jardin .section_filtre {
+	height: 30vh;
+	width: 100%;
+	background-image: url(../img/pousse.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -680,6 +733,7 @@ margin-bottom: 10%;
 	padding-left: 5px;
 	border-radius: 5px;
 	border: none;
+	font-size: 1.4em;
 }
 .section_filtre > div:last-child > div:last-child{
 	height: 50%;
@@ -693,7 +747,11 @@ margin-bottom: 10%;
 .section_filtre > div:last-child > div:last-child > div{
 	height: 100%;
 }
-.boutique .filtres_boutique {
+
+/* PAGE BOUTIQUE */
+
+/* HEADER PAGE BOUTIQUE */
+.filtres_boutique {
 	width: 45%;
 	display: flex;
 	flex-direction: column;
@@ -949,56 +1007,6 @@ height: 25px;
     padding: 10%;
 }
 
-input {
-    padding: 10px;
-    margin: 10px;
-    font-family: 'muli';
-    width: 400px;
-    border: 1px solid lightgrey;
-}
-
-input:hover {
-    color: #E2450E;
-    border: 1px solid #E2450E;
-}
-
-textarea {
-    padding: 10px;
-    margin: 10px;
-    font-family: 'muli';
-    width: 400px;
-}
-
-textarea:hover {
-    color: #E2450E;
-    border: 1px solid #E2450E;
-}
-
-
-
-.orange-btn {
-	background-color: #E2450E;
-	color: white;
-}
-
-
-.btn {
-    display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 6px;
-	font-size: 0.9em;
-	text-transform: uppercase;
-	font-family: 'Muli', sans-serif;
-    cursor: pointer;
-}
-
-button {
-    box-shadow:none;
-    border:0 none;
-    outline:0;
-}
 
 .contact_p {
     padding: 10px;
@@ -1064,13 +1072,13 @@ button {
 	width: 100%;
 	height: 100%;
 	align-items: center;
-	margin-bottom: 10%;
+	margin-top: 5%;
 }
 .faq main > section > section > span {
 	width: 30%;
 	border-top: solid 1px #926755;
-	margin-top: 5%;
-	margin-bottom: 2%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 }
 .faq main > section > section > div{
 	width: 100%;
@@ -1117,21 +1125,21 @@ button {
 	position: fixed;
 	bottom: 0;
 	color: white;
+	width: 100%;
 }
 #cookies > div {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	position: relative;
 }
 #cookies > div > div {
 	height: 80%;
-	width: 60%;
 }
 #cookies > div > div:first-child  {
-	width: 10%;
+	width: 70%;
 }
 #cookies > div > div:last-child {
-	width: 25%;
+	width: 30%;
 }
 #cookies > div > div > h4{
 	height: 30%;
@@ -1160,6 +1168,35 @@ button {
 #cookies .cookiesBtn:hover {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
+}
+
+
+/* PAGE A PROPOS */
+
+.a_propos main{
+	height: initial;
+}
+.a_propos h3{
+	text-align: left;
+	width: 100%;
+	margin-bottom: 2%;
+	margin-top: 5%;
+	color: #926755;
+}
+.a_propos p{
+	width: 100%;
+	line-height: 140%;
+	text-align: left
+}
+.a_propos section:last-child{
+	height: 70vh;
+	width: 90%;
+}.a_propos section:last-child > div{
+	width: 100%;
+}
+.fiche_equipe {
+	text-align: center;
+	width: 30%;
 }
 
 /* PAGE ACTUALITES*/
