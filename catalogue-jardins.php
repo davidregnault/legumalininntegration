@@ -40,7 +40,17 @@
 	</section>
 
 <main class="column">
-
+	<section class="row middle">
+		<div><img src="img/"></div>
+		<div>
+			<div class="titre-jardin">Titre du jardin</div>
+			<div class="adresse-jardin">25 Place de la Bourse, 75002 Paris</div>
+			<div class="proprietaire-jardin">Jean Dupont</div>
+			<div class="distance-jardin">34Km</div>
+			<div class="taille-jardin">80 m2</div>
+			<div class="date-publication-jardin">08-03-2018</div>
+		</div>
+	</section>
 </main>
 
 

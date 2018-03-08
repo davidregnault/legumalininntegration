@@ -6,15 +6,20 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body>
+<body class="actualites">
 
 <?php include "include/header.php"; ?>
+<section class="row middle section_filtre">
+        <div class="column between">
+            <h1>Actualités</h1>
+            <div></div>
+        </div>
+        <div class="column between">
+        </div>
+    </section>
+<main>
 
-<main class="actualites">
-
-<div class="actualites_bandeau">
-    <h1>Les actualités</h1>
-</div>
+    
 
     <div class="row row_article">
         <div class="col col_article">

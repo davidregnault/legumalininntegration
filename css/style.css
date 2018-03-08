@@ -719,6 +719,14 @@ margin-bottom: 10%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.actualites .section_filtre {
+	height: 30vh;
+	width: 100%;
+	background-image: url(../img/actu_bandeau.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .section_filtre > div {
 	width: 40%;
 	height: 70%;
@@ -1065,6 +1073,9 @@ height: 25px;
 .faq {
 	height: initial;
 }
+.faq > main{
+	margin-bottom: 5%;
+}
 .faq main > section {
 	width: 70%;
 }
@@ -1201,11 +1212,11 @@ height: 25px;
 
 /* PAGE ACTUALITES*/
 
-.actualites {
+.actualites main{
+    margin-top: 0;
     display:flex;
     flex-direction: column;
 }
-
 .actualites_bandeau {
     width: 100%;
     margin: 0;
@@ -1264,6 +1275,24 @@ font-size: 1.8em;
 .double_img img {
     width:100%;
 }
+
+
+
+/* PAGE CATALOGUE JARDIN */
+.catalogue-jardin main  {
+	margin-bottom: 15%;
+}
+.catalogue-jardin main > section {
+	height: 30vh;
+}
+
+
+
+
+
+
+
+
 
 
 
