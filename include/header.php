@@ -6,7 +6,7 @@
 				<li><a href="a-propos.php">a propos</a></li>
 				<li class="row middle"><a href="index.php"><img src="img/legumalin_logo.png" /></a></li>
 				<li><a href="">nos jardins</a></li>
-				<li><a href="">actualites</a></li>
+				<li><a href="actualites.php">actualites</a></li>
 				<li><a href="boutique.php">boutique</a></li>
 			</ul>
 		</nav>
