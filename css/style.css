@@ -58,6 +58,10 @@ h1 {
 	text-align: left;
 }
 
+.a_propos h1 , .faq h1{
+	color: black;
+}
+
 .h1_marron {
     color: #A03F18;
 }
@@ -1179,7 +1183,6 @@ button {
 .a_propos section:last-child{
 	height: 70vh;
 }
-
 
 
 
