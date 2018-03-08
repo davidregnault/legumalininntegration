@@ -12,7 +12,6 @@ html {
 body {
     background-color: #E6E6E6;
     position: relative;
-    height: 100%;
 }
 
 ul {
@@ -895,7 +894,7 @@ height: 25px;
 
 .profil_jardinier_jardins {
     height: 350px;
-    background-image: url("../img/profil-jardin.jpg");
+    background-image: url("img/profil-jardin.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1049,9 +1048,6 @@ button {
 .mentions p {
 	margin-bottom: 1%;
 }
-.mentions h1 {
-	color: black;
-}
 
 /* PAGE FAQ */
 .faq {
@@ -1162,33 +1158,71 @@ button {
 	color: white;
 }
 
-/* PAGE A PROPOS */
+/* PAGE ACTUALITES*/
 
-.a_propos main{
-	height: initial;
-}
-.a_propos h3{
-	text-align: left;
-	width: 100%;
-	margin-bottom: 2%;
-	margin-top: 5%;
-}
-.a_propos p{
-	line-height: 140%;
-}
-.a_propos section:last-child{
-	height: 70vh;
+.actualites {
+    display:flex;
+    flex-direction: column;
 }
 
+.actualites_bandeau {
+    width: 100%;
+    margin: 0;
+    margin-top: -50px;
+    height: 150px;
+    background-image: url(../img/actu_bandeau.jpg);
+    background-position: bottom;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.row_article {
+    width: 80%;
+}
 
+.col_article {
+    width: 50%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
 
+.article_titre {
+    font-family: 'muli';
+   color: #865597;
+font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
+.article_texte {
+    width: 95%;
+    margin: 5px;
+}
 
+.article_image {
+    height: 500px;
+    width:100%;
+}
 
+.article_source {
+    text-transform:uppercase;
+    color:#865597;
+}
 
+.double_img {
+    width:50%;
+    height: 500px;
+}
 
-
+.double_img img {
+    width:100%;
+}
 
 
 
