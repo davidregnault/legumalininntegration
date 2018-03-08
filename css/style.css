@@ -951,6 +951,7 @@ input {
     margin: 10px;
     font-family: 'muli';
     width: 400px;
+    border: 1px solid lightgrey;
 }
 
 input:hover {
@@ -1048,6 +1049,9 @@ button {
 .mentions p {
 	margin-bottom: 1%;
 }
+.mentions h1 {
+	color: black;
+}
 
 /* PAGE FAQ */
 .faq {
@@ -1058,20 +1062,15 @@ button {
 }
 .faq main > section > section{
 	width: 100%;
-	height: 60vh;
+	height: 100%;
 	align-items: center;
-	border: solid 3px #926755;
 	margin-bottom: 10%;
 }
-.faq main > section > section:first-child{
-	height: 60vh;
-}
-.faq main > section > section:nth-child(2){
-	height: 70vh;
-}
 .faq main > section > section > span {
-	width: 50%;
+	width: 30%;
 	border-top: solid 1px #926755;
+	margin-top: 5%;
+	margin-bottom: 2%;
 }
 .faq main > section > section > div{
 	width: 100%;
@@ -1080,19 +1079,18 @@ button {
 	flex-direction: column;
 	justify-content: center;
 }
-.faq main > section > section > div:first-child{
-	padding-top: 1%;
-	padding-bottom: 1%;
-	border-bottom: solid 3px #926755;
-	padding-left: 0;
-}
 .faq main > section > section > div > *{
 	padding-left: 3%;
+	padding-right: 3%;
 }
 
 .faq .question_forum {
 	font-size: 1.5em;
 	font-weight: 200;
+	margin-bottom: 1%;
+}
+.faq .reponse_forum, .faq .question_forum {
+	text-align: center;
 }
 
 /* PAGE 404 */
@@ -1164,8 +1162,23 @@ button {
 	color: white;
 }
 
+/* PAGE A PROPOS */
 
-
+.a_propos main{
+	height: initial;
+}
+.a_propos h3{
+	text-align: left;
+	width: 100%;
+	margin-bottom: 2%;
+	margin-top: 5%;
+}
+.a_propos p{
+	line-height: 140%;
+}
+.a_propos section:last-child{
+	height: 70vh;
+}
 
 
 
