@@ -1049,6 +1049,9 @@ button {
 .mentions p {
 	margin-bottom: 1%;
 }
+.mentions h1 {
+	color: black;
+}
 
 /* PAGE FAQ */
 .faq {
@@ -1159,8 +1162,23 @@ button {
 	color: white;
 }
 
+/* PAGE A PROPOS */
 
-
+.a_propos main{
+	height: initial;
+}
+.a_propos h3{
+	text-align: left;
+	width: 100%;
+	margin-bottom: 2%;
+	margin-top: 5%;
+}
+.a_propos p{
+	line-height: 140%;
+}
+.a_propos section:last-child{
+	height: 70vh;
+}
 
 
 
