@@ -1,6 +1,5 @@
 <section class="column middle" id="cookies">
 	<div class="row middle">
-		<div></div>
 		<div class="columnn">
 			<h4>Utilisation des cookies</h4>
 			<div class="row between middle">
