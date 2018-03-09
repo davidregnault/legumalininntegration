@@ -23,27 +23,30 @@
 
 	<main class="column">
 		<div class="column">
-			<div class="row middle retour_produits"><a class="row middle around" href=""><img src="img/left-arrow.svg"><div>Retour</div></a></div>
+			<div class="row middle retour_produits"><a class="row middle around" href="boutique.php"><img src="img/left-arrow.svg"><div>Retour</div></a></div>
 		</div>
-		<section class="fiche_produit">
-			<div class="row">
-				<img src="img/product_2.jpg">
-			</div>
-			<div class="column">
-				<span class="column between">
-					<h2>Graine</h2>
-					<h3>Graines naturels</h3>
-				</span>
-				<span class="column around">
-					<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte</p>
-					<div class="btn green-btn"><a href="">Acheter</a></div>
-				</span>
-			</div>
-		</section>
-	</main>
+
+			<section class="row middle section_fiche">
+				<div>
+				</div>
+				<div>
+					<div>
+						<div class="titre-fiche"><span>Titre du produit</span></div>
+						<div class="prix-produit">35€</div>
+						<div class="description-produit">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</div>
+						<div class="distance-jardin">Distance : <span>34Km</span></div>
+						<div class="btn green-btn"><a href="produit.php">Ajouter au panier</a></div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+
+
+
+
 <?php include "include/cookies.php"; ?>
 <?php include "include/footer.php"; ?>
-
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -49,7 +49,7 @@
 						<div class="prix-produit">35€</div>
 						<div class="description-produit">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</div>
 						<div class="distance-jardin">Distance : <span>34Km</span></div>
-						<div class="btn green-btn"><a href="fiche-jardinn.php">Acheter</a></div>
+						<div class="btn green-btn"><a href="produit.php">Acheter</a></div>
 					</div>
 				</div>
 			</section>

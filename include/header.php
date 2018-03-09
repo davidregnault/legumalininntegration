@@ -10,11 +10,13 @@
 				<li><a href="boutique.php">boutique</a></li>
 			</ul>
 		</nav>
-		<aside class="row">
-			<div id="btn_aside"></div>
-			<div class="row">
-				<a href=""><img src="img/shop.png"></a>
-				<a href=""><img src="img/user.png"></a>
+		<aside class="row middle">
+			<div class="row between">
+				<div class="column middle" id="btn_aside"><img id="img_aside" src="img/aside-left-arrow.png"></div>
+				<div class="row">
+					<a href=""><img src="img/shop.png"></a>
+					<a href=""><img src="img/user.png"></a>
+				</div>
 			</div>
 		</aside>
 	</header>
