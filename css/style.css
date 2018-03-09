@@ -726,7 +726,7 @@ margin-bottom: 10%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.catalogue-jardin .section_filtre {
+.catalogue-jardin .section_filtre, .fiche-jardin .section_filtre {
 	height: 30vh;
 	width: 100%;
 	background-image: url(../img/pousse.jpg);
@@ -1339,7 +1339,7 @@ section.section_fiche > div:last-child > div {
 	width: 90%;
 	margin-bottom: 3%;
 }
-.produit main img[src="img/left-arrow.svg"] {
+.produit main img[src="img/left-arrow.svg"], .fiche-jardin main img[src="img/left-arrow.svg"] {
 	width: 20%;
 	margin-right: 5px;
 }
@@ -1355,12 +1355,33 @@ section.section_fiche > div:last-child > div {
 	width: initial;
 	width: 10%;
 }
-.produit .btn {
+
+.produit .btn, .fiche-jardin .btn {
 	width: 40%;
 }
-.produit .section_fiche {
+.produit .section_fiche, .fiche-jardin .section_fiche  {
 	height: 70vh;
 }
+
+/* PAGE JARDIN */
+.fiche-jardin main {
+	position: relative;
+}
+.fiche-jardin .retour_produits {
+	position: absolute;
+	left: 7%;
+	top: 0%;
+}
+ .fiche-jardin main img[src="img/left-arrow.svg"] {
+	width: 80%;
+	margin-right: 5px;
+}
+
+.fiche-jardin .section_fiche {
+	margin-top: 5%;
+}
+
+
 
 
 
