@@ -39,8 +39,22 @@
 			</div>
 		</div>
 	</section>
-		<main>
-			
+		<main class="column">
+			<section class="row middle section_fiche">
+				<div>
+				</div>
+				<div>
+					<div>
+						<div class="titre-fiche"><span>Titre du jardin</span></div>
+						<div class="adresse-jardin">Adresse : <span>25 Place de la Bourse, 75002 Paris</span></div>
+						<div class="proprietaire-jardin">Proposé par : <span>Jean Dupont</span></div>
+						<div class="distance-jardin">Distance : <span>34Km</span></div>
+						<div class="taille-jardin">Taille : <span>80 m2</span></div>
+						<div class="date-publication-jardin">Pulié le : <span>08-03-2018</span></div>
+						<div class="btn green-btn"><a href="fiche-jardinn.php">En savoir plus</a></div>
+					</div>
+				</div>
+			</section>
 		</main>
 	
 
