@@ -36,13 +36,13 @@
 
 		Grâce à un système de géolocalisation, legumalin vous permets de trouver tous les jardins ou jardiniers à proximité et leurs préférences.<br />
 
-		N’attendez plus, rejoignez-nous.</p>
+		N’attendez plus, <a href="#">rejoignez-nous !</a></p>
 	</section>
-	<section>
-		<h3>Notre équipe</h3>
-		<p>Legumalin est une idée imaginée dans le cadre d’un projet scolaire à l’EEMI (Ecole Européenne des métiers de l’Internet).</p>
-	</section>
-	<section class="column middle around">
+	<section class="column middle between">
+		<div>
+			<h3>Notre équipe</h3>
+			<p>Legumalin est une idée imaginée dans le cadre d’un projet scolaire à l’EEMI (Ecole Européenne des métiers de l’Internet).</p>
+		</div>
 		<div class="row middle around">
 			<div class="fiche_equipe">
 				<div><img src="img/"></div>
