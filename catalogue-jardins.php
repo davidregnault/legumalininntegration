@@ -45,7 +45,7 @@
 		</div>
 		<div>
 			<div>
-				<div class="titre-jardin"><span>Titre du jardin</span></div>
+				<div class="titre-fiche"><span>Titre du jardin</span></div>
 				<div class="adresse-jardin">Adresse : <span>25 Place de la Bourse, 75002 Paris</span></div>
 				<div class="proprietaire-jardin">Proposé par : <span>Jean Dupont</span></div>
 				<div class="distance-jardin">Distance : <span>34Km</span></div>
@@ -61,7 +61,7 @@
 		</div>
 		<div>
 			<div>
-				<div class="titre-jardin"><span>Titre du jardin</span></div>
+				<div class="titre-fiche"><span>Titre du jardin</span></div>
 				<div class="adresse-jardin">Adresse : <span>25 Place de la Bourse, 75002 Paris</span></div>
 				<div class="proprietaire-jardin">Proposé par : <span>Jean Dupont</span></div>
 				<div class="distance-jardin">Distance : <span>34Km</span></div>
@@ -77,7 +77,7 @@
 		</div>
 		<div>
 			<div>
-				<div class="titre-jardin"><span>Titre du jardin</span></div>
+				<div class="titre-fiche"><span>Titre du jardin</span></div>
 				<div class="adresse-jardin">Adresse : <span>25 Place de la Bourse, 75002 Paris</span></div>
 				<div class="proprietaire-jardin">Proposé par : <span>Jean Dupont</span></div>
 				<div class="distance-jardin">Distance : <span>34Km</span></div>
@@ -93,7 +93,7 @@
 		</div>
 		<div>
 			<div>
-				<div class="titre-jardin"><span>Titre du jardin</span></div>
+				<div class="titre-fiche"><span>Titre du jardin</span></div>
 				<div class="adresse-jardin">Adresse : <span>25 Place de la Bourse, 75002 Paris</span></div>
 				<div class="proprietaire-jardin">Proposé par : <span>Jean Dupont</span></div>
 				<div class="distance-jardin">Distance : <span>34Km</span></div>
