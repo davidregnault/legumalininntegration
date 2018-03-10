@@ -221,3 +221,15 @@ function isFlashMessage()
 
     return;
 }
+
+function route($name)
+{
+    switch($name)
+    {
+        case '':
+            break;
+        default:
+            header('Location:404.php');
+            break;
+    }
+}
