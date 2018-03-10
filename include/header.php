@@ -1,7 +1,7 @@
 <header class="type_header">
     <nav class="column middle">
         <ul class="row middle">
-            <li><a href="faq.php">forum</a></li>
+            <li><a href="<?php route('faq'); ?>">forum</a></li>
             <li><a href="">tutoriels</a></li>
             <li><a href="a-propos.php">a propos</a></li>
             <li class="row middle"><a href="index.php"><img src="assets/images/legumalin_logo.png" /></a></li>

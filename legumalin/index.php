@@ -1,5 +1,5 @@
 <?php
-    require_once ('includes/requires.inc.php');
+    require_once('includes/requires.inc.php');
 
     $TITLE = 'Affichage produits';
     require_once('includes/header.inc.php');

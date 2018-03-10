@@ -1,6 +1,7 @@
 <?php
-    require_once('');
+    require_once('include/requires.inc.php');
 
+    #dd('okok');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
