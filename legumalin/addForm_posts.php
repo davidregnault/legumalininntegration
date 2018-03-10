@@ -8,7 +8,7 @@ if(!empty($_GET['modif']) && is_numeric($_GET['modif']))
 {
     $status = 'modifier';
     $get = $_GET['modif'];
-    $values = selectOne('posts', 'post_id', $get);
+    $values = selectOne('posts', 'post_id', $get, PDO::PARAM_INT);
     extract($values);
 }
 else
