@@ -1,13 +1,30 @@
 <?php
 
-require_once('includes/requires.inc.php');
+require_once('include/requires.inc.php');
 
-require_once('includes/header.inc.php');
+require_once('include/header.inc.php');
 
 isFlashMessage();
 
-
+if ( (!empty($_GET['statut']) && $_GET['statut'] === 'jardinier') || (!empty($_GET['statut']) && $_GET['statut'] === 'proprietaire') )
+{
+    $statut = $_GET['statut'];
+    if ($statut === 'jardinier')
+    {
+        $checked_j = 'checked';
+    } elseif ($statut === 'proprietaire')
+    {
+        $checked_p = 'checked';
+    }
+}
+else
+{
+    header('Location:index.php');
+}
 ?>
+
+<h1>Bonjour, vous souhaitez vous enregistrer en tant que <?= $statut; ?> !</h1>
+
     <form method="post" action="register_treatment.php">
         <div class="form-group">
             <label for="name">Nom de famille : </label>
@@ -34,13 +51,13 @@ isFlashMessage();
             <input type="password" value="" name="confirmation" id="confirmation">
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" id="proprietaire" name="statut" value="1" checked>
+            <input class="form-check-input" type="radio" id="proprietaire" name="statut" value="1" <?= (!empty($checked_p)) ? "$checked_p" : ''; ?>>
             <label class="form-check-label" for="proprietaire">
                 Propriétaire
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="statut" id="jardinier" value="2">
+            <input class="form-check-input" type="radio" name="statut" id="jardinier" value="2" <?= (!empty($checked_j)) ? "$checked_j" : ''; ?>>
             <label class="form-check-label" for="jardinier">
                 Jardinier
             </label>

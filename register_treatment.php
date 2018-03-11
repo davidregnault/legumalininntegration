@@ -1,6 +1,6 @@
 <?php
 
-    require_once('includes/requires.inc.php');
+    require_once('include/requires.inc.php');
 
     if (!empty($_POST['name']) && !empty($_POST['surname']) && !empty($_POST['login']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirmation']))
     {
@@ -59,7 +59,10 @@
             $req->bindValue(':email', $emailOk);
             $req->bindValue(':avatar', $avatar);
             $req->bindValue(':statut', $statut, PDO::PARAM_INT);
+
             $insert = $req->execute();
+
+            #dd($insert);
 
             if ($insert)
             {
@@ -75,7 +78,5 @@
             var_dump($e->getMessage());
             $_SESSION['flashMessage'] = flashMessage('error');
             header('Location:register.php');
-
-            #dd('fuckoff !');
         }
     endif;

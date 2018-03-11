@@ -1,8 +1,3 @@
-<?php
-    require_once('include/requires.inc.php');
-
-    #dd('okok');
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -29,13 +24,13 @@
 			<h3>Envie de jardiner ?</h3>
 			<img src="img/proprio.png">
 			<p>Les propriétaires, comme leur nom l’indique, sont des personnes détenant un jardin et souhaitant le mettre à profit d’autrui en échange d’un pourcentage de la récolte et d’un apprentissage de la permaculture biologique.</p>
-			<div class="btn orange-btn"><a href="">S'inscrire</a></div>
+			<div class="btn orange-btn"><a href="register.php?statut=jardinier">S'inscrire</a></div>
 		</div>
 		<div class="column middle">
 			<h3>Envie de légumes ?</h3>
 			<img src="img/jardinier.png">
 			<p>Les jardiniers sont des particuliers n’ayant pas de jardins mais souhaitant cultiver des légumes en suivant le principe de l’agriculture biologique.  Ainsi, leur potager leur permettra de subvenir, en parti, à leurs besoins en légumes sans se ruiner. Une partie de leur récolte sera reversée au propriétaire du jardin et une autre, s’il le souhaite, à une association. </p>
-			<div class="btn green-btn"><a href="">S'inscrire</a></div>
+			<div class="btn green-btn"><a href="register.php?statut=proprietaire">S'inscrire</a></div>
 		</div>
 	</section>
 
@@ -101,7 +96,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div>
 				<div>
 					<div>GRAINES AUBERGINES BARBENTANE</div>

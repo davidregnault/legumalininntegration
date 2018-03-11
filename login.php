@@ -1,6 +1,6 @@
 <?php
-    require_once('includes/requires.inc.php');
-    require_once('includes/header.inc.php');
+    require_once('include/requires.inc.php');
+    require_once('include/header.inc.php');
 
 isFlashMessage();
 

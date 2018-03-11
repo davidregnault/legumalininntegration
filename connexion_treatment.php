@@ -1,6 +1,6 @@
 <?php
 
-    require_once('includes/requires.inc.php');
+    require_once('include/requires.inc.php');
 
     if (!empty($_POST) && !empty($_POST['login']) && !empty($_POST['password']))
     {

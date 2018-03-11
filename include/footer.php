@@ -16,7 +16,7 @@
 
         <div class="footer_part filet">
             <ul>
-                <li class="footer_social_media"><img src="assets/images/reseaux_sociaux_fb.png"><img src="assets/images/reseaux_sociaux_insta.png"><img src="assets/images/reseaux_sociaux_twitter.png"></li>
+                <li class="footer_social_media"><img src="img/reseaux_sociaux_fb.png"><img src="img/reseaux_sociaux_insta.png"><img src="img/reseaux_sociaux_twitter.png"></li>
                 <li class="footer_center"><a href="contact.php">Nous contacter</a></li>
             </ul>
         </div>
