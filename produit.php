@@ -47,15 +47,25 @@
 			<section class="row middle section_fiche">
 				<div style="background-image: url(img/<?= (!empty($produit['photo']) && file_exists('img/produits/' . $produit['photo'])) ? 'produits/' . $produit['photo'] .'' : 'NoImageFound.jpg'; ?>)">
 				</div>
-				<div>
-					<div>
-						<div class="titre-fiche"><span><?= (!empty($produit)) ? $produit['title'] : 'Oups, nous rencontrons un léger soucis !'; ?></span></div>
-						<div class="prix-produit"><?= (!empty($produit)) ? $produit['price'] : 'Oups, nous rencontrons un léger soucis !'; ?> €</div>
-						<div class="description-produit"><?= (!empty($produit)) ? $produit['description'] : 'Oups, nous rencontrons un léger soucis !'; ?></div>
-						<div class="distance-jardin">Distance : <span>34Km</span></div>
-						<div class="btn green-btn"><a href="ajout_panier.php">Ajouter au panier</a></div>
-					</div>
-				</div>
+                <form method="post" action="addCart_treatment.php">
+                    <input type="hidden" name="product_id" value="<?= (!empty($produit['product_id']) && is_numeric($produit['product_id'])) ? $produit['product_id'] : 0; ?>">
+                    <div>
+                        <div>
+                            <div name="titre" class="titre-fiche"><span><?= (!empty($produit)) ? $produit['title'] : 'Oups, nous rencontrons un léger soucis !'; ?></span></div>
+                            <div name="prix" class="prix-produit"><?= (!empty($produit)) ? $produit['price'] : 'Oups, nous rencontrons un léger soucis !'; ?> €</div>
+                            <div name="description" class="description-produit"><?= (!empty($produit)) ? $produit['description'] : 'Oups, nous rencontrons un léger soucis !'; ?></div>
+
+                            <select name="quantity" id="quantity">
+                                <?php for($i=1; $i <= intval($produit['quantity']); $i++ ) : ?>
+                                    <option value="<?= $i ?>"><?= $i ?></option>
+                                <?php endfor ?>
+                            </select>
+
+                            <div class="distance-jardin">Distance : <span>34Km</span></div>
+                            <button type="submit" class="btn green-btn"name="addCart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </form>
 			</section>
 		</main>
 

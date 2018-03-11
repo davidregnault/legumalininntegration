@@ -224,12 +224,35 @@ function isFlashMessage()
 
 function route($name)
 {
-    switch($name)
-    {
+    switch ($name) {
         case '':
             break;
         default:
             header('Location:404.php');
             break;
+    }
+}
+
+function addToCart(array $produit, $quantite) {
+
+    if(!empty($_SESSION['cart']) && array_key_exists('id', $_SESSION['cart'])) {
+        $positionProduit = array_search($produit['id'],  $_SESSION['cart']['id']);
+    }
+
+    if (isset($positionProduit) && $positionProduit !== false)
+    {
+        $_SESSION['cart']['quantite'][$positionProduit] += $quantite ;
+        $_SESSION['cart']['prix_total_produit'][$positionProduit] = $produit['prix'] * $_SESSION['cart']['quantite'][$positionProduit];
+    }
+    else
+    {
+        $_SESSION['cart']['id'][]        = $produit['product_id'];
+        $_SESSION['cart']['prix_total_produit'][]= $produit['price'] * $quantite;
+        $_SESSION['cart']['prix_unitaire'][]= $produit['price'];
+        $_SESSION['cart']['reference'][] = $produit['reference'];
+        $_SESSION['cart']['titre'][]     = $produit['title'];
+        $_SESSION['cart']['description'][] = $produit['description'];
+        $_SESSION['cart']['quantite'][]  = $quantite;
+        $_SESSION['cart']['photo'][]     = $produit['photo'];
     }
 }
