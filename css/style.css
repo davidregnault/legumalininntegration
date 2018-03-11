@@ -1183,6 +1183,239 @@ font-size: 1.8em;
     width:100%;
 }
 
+/*PAGE TUTORIELS*/
+
+.tutoriels .section_filtre {
+    background-image: url('../img/bandeau_tutos.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:30vh;
+}
+
+.page_description_head {
+    color:white;
+    padding-bottom: 25px;
+}
+
+.legende {
+    font-family: 'muli';
+    text-transform: uppercase;
+    color:#926755;
+    text-align:center;
+    font-weight:bold;
+}
+
+.row_tuto {
+    width:100%;
+}
+
+/* PAGE PROFIL JARDINIER */
+
+.jardinier_profil .section_filtre {
+    width:100%;
+    background-image: url(../img/carrot.jpg);
+    height: 25vh;
+    background-position:center;
+    background-size:cover;
+}
+
+.profil_bouton {
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.modif_settings .btn {
+   text-align:center;
+    width:100%;
+}
+
+
+.profil_jardinier_h3{
+    color: #926755;
+    font-size: 2em;
+}
+
+.profil_jardinier_infos {
+display:flex;
+justify-content: space-around;
+margin-bottom: 2%;
+}
+
+.profil_jardinier_id {
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+}
+
+.profil_jardinier_partage {
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.profile_bloc {
+    width:100%;
+    height: 100%;
+    background-color:#E6E6E6;
+    padding: 2%;;
+    border: solid 25px white;
+    border-radius: 6px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.profile_img {
+    width:160px;
+    height:160px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.profil_jardinier_id ul{
+    height:225px;
+    overflow:auto;
+    width:30%;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+}
+
+.profil_jardinier_id li{
+    height:100%;
+    list-style: none;
+    border: 2px;
+}
+
+.profil label {
+    font-family: 'muli';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18pts;
+}
+
+.profil_jardinier_graphics {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.jardinier_jauge {
+    background-color: aqua;
+    width: 100%;
+    height: 25px;
+    border-radius: 9px;
+}
+
+.profil_jardinier_legendes {
+    height: 100%;
+}
+
+.profil_jardinier_legendes ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+
+.profil_jardinier_legendes li{
+height: 25px;
+}
+
+
+
+.profil_jardinier_jardins {
+    background-color:#2B1C16;
+}
+
+.profil_liste_jardin {
+    overflow:auto;
+    justify-content: center;
+}
+
+.profil_section_titre {
+    margin-left: 3%;
+}
+
+
+.profil_jardin_card {
+    background-color: white;
+    width: 400px;
+    height:100%;
+    border-radius: 6px;
+    margin: 2%;
+}
+
+.profil_jardin_img {
+    height: 200px;
+    border-radius: 6px 6px 0 0;
+}
+
+.profil_jardin_description {
+    text-align: center;
+}
+.profil_jardin_description p{
+    padding: 5px;
+}
+
+.profil_partage .col {
+    height:80%;
+}
+
+.profil_partage div > div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    height: 80%;
+}
+
+.graph_1 {
+    background-color:#387c31;
+}
+
+.graph_2 {
+    background-color:#E2450E ;
+}
+
+.graph_3 {
+    background-color:#865597;
+}
+
+/*PROFIL PROPRIETAIRE PROPRIO*/
+.proprio_profil .section_filtre {
+    width:100%;
+    background-image: url(../img/profil_garden.jpg);
+    height: 25vh;
+    background-position:center;
+    background-size:cover;
+}
+
+.profil_proprio_jardins {
+    background-color:#387c31;
+}
+
+.profil_proprio_jardins .row:first-child {
+    justify-content: space-between;
+}
+
+.profil_proprio_jardins .btn {
+    text-align:center;
+    margin: 20px;
+}
+
+.profil_proprio_jardins .btn a {
+    padding:2px;
+    color: #387c31;
+}
 
 
 /* PAGE CATALOGUE JARDIN */
@@ -1384,9 +1617,23 @@ section.section_fiche > div:last-child > div {
 
 
 
+/* COULEURS */
 
+.blanc {
+    color: #fff;
+}
 
+.violet {
+    color: #865597;
+}
 
+.green {
+    color:#387c31;
+}
+
+.marron_clair {
+    color:#926755;
+}
 .displayNone {
 	display: none !important;
 }

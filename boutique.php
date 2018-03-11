@@ -1,3 +1,9 @@
+<?php
+
+    require_once('include/requires.inc.php');
+
+    $allProducts = selectAll('products');
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -40,25 +46,24 @@
 		</div>
 	</section>
 		<main class="column">
+
+            <?php foreach($allProducts as $product): ?>
 			<section class="row middle section_fiche">
-				<div>
-				</div>
+				<div style="background-image: url(img/<?= (!empty($product['photo']) && file_exists('img/produits/' . $product['photo'])) ? 'produits/' . $product['photo'] .'' : 'NoImageFound.jpg'; ?>);">
+
+                </div>
 				<div>
 					<div>
-						<div class="titre-fiche"><span>Titre du produit</span></div>
-						<div class="prix-produit">35€</div>
-						<div class="description-produit">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</div>
+						<div class="titre-fiche"><span><?= $product['title']; ?></span></div>
+						<div class="prix-produit"><?= $product['price']; ?> €</div>
+						<div class="description-produit"><?= $product['description']; ?></div>
 						<div class="distance-jardin">Distance : <span>34Km</span></div>
-						<div class="btn green-btn"><a href="produit.php">Acheter</a></div>
+						<div class="btn green-btn"><a href="produit.php?id=<?= $product['product_id']; ?>">Acheter</a></div>
 					</div>
 				</div>
 			</section>
+            <?php endforeach; ?>
 		</main>
-	
-
-
-
-</main>
 <?php include "include/cookies.php"; ?>
 <?php include "include/footer.php"; ?>
 <script src="js/script.js"></script>

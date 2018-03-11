@@ -1,3 +1,22 @@
+<?php
+
+    require_once('include/requires.inc.php');
+
+    if (!empty($_GET['id']) && is_numeric($_GET['id']))
+    {
+        $produit = selectOne('products', 'product_id', $_GET['id'], PDO::PARAM_INT);
+        #dd($product);
+
+        if(!$produit)
+        {
+            header('Location:boutique.php');
+        }
+    }
+    else
+    {
+        header('Location:boutique.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,30 +39,25 @@
 		</div>
 	</section>
 
-
 	<main class="column">
 		<div class="column">
 			<div class="row middle retour_produits"><a class="row middle around" href="boutique.php"><img src="img/left-arrow.svg"><div>Retour</div></a></div>
 		</div>
 
 			<section class="row middle section_fiche">
-				<div>
+				<div style="background-image: url(img/<?= (!empty($produit['photo']) && file_exists('img/produits/' . $produit['photo'])) ? 'produits/' . $produit['photo'] .'' : 'NoImageFound.jpg'; ?>)">
 				</div>
 				<div>
 					<div>
-						<div class="titre-fiche"><span>Titre du produit</span></div>
-						<div class="prix-produit">35€</div>
-						<div class="description-produit">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</div>
+						<div class="titre-fiche"><span><?= (!empty($produit)) ? $produit['title'] : 'Oups, nous rencontrons un léger soucis !'; ?></span></div>
+						<div class="prix-produit"><?= (!empty($produit)) ? $produit['price'] : 'Oups, nous rencontrons un léger soucis !'; ?> €</div>
+						<div class="description-produit"><?= (!empty($produit)) ? $produit['description'] : 'Oups, nous rencontrons un léger soucis !'; ?></div>
 						<div class="distance-jardin">Distance : <span>34Km</span></div>
-						<div class="btn green-btn"><a href="produit.php">Ajouter au panier</a></div>
+						<div class="btn green-btn"><a href="ajout_panier.php">Ajouter au panier</a></div>
 					</div>
 				</div>
 			</section>
 		</main>
-
-
-
-
 
 <?php include "include/cookies.php"; ?>
 <?php include "include/footer.php"; ?>
