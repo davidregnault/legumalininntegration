@@ -1,5 +1,7 @@
 <?php
 require_once ('includes/requires.inc.php');
+
+$TITLE = 'Gestion utilisateurs';
 require_once('includes/header.inc.php');
 
 $productsArray = selectAll('users');

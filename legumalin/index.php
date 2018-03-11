@@ -1,5 +1,7 @@
 <?php
-    require_once ('includes/requires.inc.php');
+    require_once('includes/requires.inc.php');
+
+    $TITLE = 'Affichage produits';
     require_once('includes/header.inc.php');
 
 if(!empty($_GET['delete']) && is_numeric($_GET['delete']))
@@ -17,10 +19,16 @@ if(!empty($_GET['delete']) && is_numeric($_GET['delete']))
     header('Location:index.php');
 }
 
-if (!empty($_SESSION['flashMessage'])):
-    echo $_SESSION['flashMessage'];
-endif;
+isFlashMessage();
 
+$connected = isConnected();
+
+if ($connected && !empty($_COOKIE['surname']))
+{
+    echo 'Bonjour ' . $_COOKIE['surname'];
+}
+
+#dd($connected);
 $productsArray = selectAll('products');
 ?>
 
@@ -29,6 +37,8 @@ $productsArray = selectAll('products');
         <li role="presentation"><a href="">Utilisateurs</a></li>
         <li role="presentation"><a href="">Produits</a></li>
         <li role="presentation"><a href="">Actualités</a></li>
+
+        <?= ($connected) ? '<li role="presentation"><a href="logout_treatment.php">Se déconnecter</a></li>' : '<li role="presentation"><a href="connexion_treatment.php">Se Connecter</a></li>'; ?>
     </ul>
 
     <a href="form_add.php">+ nouveau produit</a>
@@ -39,7 +49,6 @@ $productsArray = selectAll('products');
         <thead class="thead-dark">
         <tr>
     <?php
-
         foreach($productsArray[0] as $key => $eachProducts):
     ?>
 
@@ -83,6 +92,6 @@ $productsArray = selectAll('products');
     ?>
 
 	<!--<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>-->
-	<script src="assets/js/script.js"></script>
-	</body>
-	</html>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
