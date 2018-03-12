@@ -2,3 +2,4 @@ include/pdo.inc.php
 .idea/
 legumalin/.idea/
 legumalin/includes/pdo.inc.php
+vendor/
