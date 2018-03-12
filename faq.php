@@ -1,31 +1,16 @@
 <?php
-require_once('include/pdo.inc.php');
-//--------------------------------
+require_once('include/requires.inc.php');
 
-// code PHP pour affichage des messages
-// 1 : je VALIDE ma requete SQL :
-// SELECT pseudo, message, DATE_FORMAT(date_heure, "%d/%m/%Y à %Hh%i") AS date_fr FROM tchat ORDER BY date_heure DESC
-// 2 : je pose ma requette SQL (sans bug) dans mon environnement PHP
+try
+{
+    $resultat = $pdo->query('SELECT id, pseudo, message, DATE_FORMAT(date_heure, "%d/%m/%Y à %Hh%i") AS date_fr FROM tchat ORDER BY id DESC');
+}
+catch (Exception $e)
+{
+    return $e->getMessage();
+}
 
-$resultat = $pdo->query('SELECT id, pseudo, message, DATE_FORMAT(date_heure, "%d/%m/%Y à %Hh%i") AS date_fr FROM tchat ORDER BY id DESC');
-// var_dump($pdo);
-// echo '<hr>';
-// var_dump(get_class_methods($resultat));
-
-// $resultat nous donne un objet PDOStatement. Cet objet contient le texte (pseudo, message, date_heure) de la base de donnees, que nous souhaitons afficher en HTML.
-// // Pour recuperer ce texte, je dois passer par une methode / fonction de PDOStatement.
-// echo '<pre>';
-// print_r($resultat->fetchAll(PDO::FETCH_ASSOC));
-// echo '</pre>';
-// echo '<hr>';
-// je recupere le smessages dans une variable $messages, qui devient un donc un ARray qui contient toutes les infos de ma table TCHAT
 $messages = $resultat->fetchAll(PDO::FETCH_ASSOC);
-// echo '<pre>';
-// print_r($messages);
-// echo '</pre>';
-// echo '<hr>';
-
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -42,6 +27,7 @@ $messages = $resultat->fetchAll(PDO::FETCH_ASSOC);
 <main class="column">
     <h1>Forum (FAQ)</h1>
     <section>
+        <h2>Les questions les plus posées</h2>
         <section class="col middle between">
 
             <div>
@@ -103,12 +89,11 @@ $messages = $resultat->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </section>
     </section>
-    <section>
-        <section class="col middle between">
+    <section class="faq_tchat">
+        <section>
             <div>
                 <h2>Tchat</h2>
-                <body>
-                <div class="container">
+                <div class="container col middle between">
                     <div class="row">
                         <div class="col-md-6">
                             <?php if(!empty($msg)) { echo $msg; } ?>
@@ -122,25 +107,27 @@ $messages = $resultat->fetchAll(PDO::FETCH_ASSOC);
                             </form>
                         </div>
                     </div>
-                    <h1 id="titreMessages">Affichage des messages</h1>
-                    <?php
-                    foreach($messages as $key => $value) :
+                    <h3 class="article_titre black" id="titreMessages">Affichage des messages</h3>
+                    <div class="tchat_fenetre">
+                        <?php
+                         foreach($messages as $key => $value) :
                         ?>
-                        <div class="row message-block" data-id-message="<?= $value['id'] ?>" id="msg_<?= $key ?>">
+                        <div class="col message-block" data-id-message="<?= $value['id'] ?>" id="msg_<?= $key ?>">
                             <div class="col-md-6">
-                                <p><?= $value['pseudo'] ?></p>
+                                <p class="tchat_pseudo marron_clair"><?= $value['pseudo'] ?></p>
                             </div>
                             <div class="col-md-6">
-                                <p>Le <?= $value['date_fr'] ?></p>
+                                <p class="tchat_date">Le <?= $value['date_fr'] ?></p>
                             </div>
                             <div class="col-md-12">
-                                <p><?= $value['message'] ?></p>
+                                <p class="tchat_message"><?= $value['message'] ?></p>
                             </div>
                         </div>
                         <hr>
-                    <?php
-                    endforeach;
-                    ?>
+                        <?php
+                        endforeach;
+                        ?>
+                    </div>
                 </div>
 
                 <script src="js/tchat/jquery.js"></script>

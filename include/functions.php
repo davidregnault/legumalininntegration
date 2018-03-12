@@ -222,17 +222,6 @@ function isFlashMessage()
     return;
 }
 
-function route($name)
-{
-    switch ($name) {
-        case '':
-            break;
-        default:
-            header('Location:404.php');
-            break;
-    }
-}
-
 function addToCart(array $produit, $quantite) {
 
     if(!empty($_SESSION['cart']) && array_key_exists('id', $_SESSION['cart'])) {
@@ -254,5 +243,23 @@ function addToCart(array $produit, $quantite) {
         $_SESSION['cart']['description'][] = $produit['description'];
         $_SESSION['cart']['quantite'][]  = $quantite;
         $_SESSION['cart']['photo'][]     = $produit['photo'];
+    }
+}
+
+function deleteFromCart($productId) {
+    if(!empty($_SESSION['cart']) && array_key_exists('id', $_SESSION['cart'])) {
+        $positionProduit = array_search($productId,  $_SESSION['cart']['id']);
+    }
+
+    if (isset($positionProduit) && $positionProduit !== false)
+    {
+        array_splice($_SESSION['cart']['id'], $positionProduit,1);
+        array_splice($_SESSION['cart']['prix_total_produit'], $positionProduit,1);
+        array_splice($_SESSION['cart']['prix_unitaire'], $positionProduit,1);
+        array_splice($_SESSION['cart']['reference'], $positionProduit,1);
+        array_splice($_SESSION['cart']['titre'], $positionProduit,1);
+        array_splice($_SESSION['cart']['quantite'], $positionProduit,1);
+        array_splice($_SESSION['cart']['description'], $positionProduit,1);
+        array_splice($_SESSION['cart']['photo'], $positionProduit,1);
     }
 }

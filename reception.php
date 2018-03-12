@@ -14,39 +14,10 @@ $messages = $resultat->fetchAll(PDO::FETCH_ASSOC);
 
 $nouveauxMessages = '';
 foreach ( $messages as $key => $value ) {
-	$nouveauxMessages .= '
-<div class="row" data-id-message="'.$value['id'].'" id="msg_'.$key.'">
-	<div class="col-md-6">
-		<p>'.$value['pseudo'].'</p>
-	</div>
-	<div class="col-md-6">
-		<p>Le '.$value['date_fr'].'</p>
-	</div>
-	<div class="col-md-12">
-		<p>'.$value['message'].'</p>
-	</div>
-</div>
-<hr>
-';
-
+	$nouveauxMessages .= '<div class="row" data-id-message="'.$value['id'].'" id="msg_'.$key.'"><div class="col-md-6"><p>'.$value['pseudo'].'</p></div><div class="col-md-6"><p>Le '.$value['date_fr'].'</p></div><div class="col-md-12"><p>'.$value['message'].'</p></div></div><hr>';
 }
 
-
 $tableau = [
-	'message' => $nouveauxMessages];
+	'message' => $nouveauxMessages
+];
 echo json_encode($tableau);
-
-
-?>
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	

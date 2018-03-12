@@ -46,7 +46,6 @@ section {
 .a_propos section, .faq section, .mentions section {
 	background-color: white;
 	border-radius: 20px;
-	padding: 15px;
 	margin-bottom: 20px;
 }
 .accueil section {
@@ -85,9 +84,19 @@ h2 {
 }
 
 h3 {
-	font-size: 2.5em;
-	font-family: 'Amaranth', sans-serif;
+    font-family: 'muli';
+    color: #865597;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
+h4 {
+    font-family: 'muli';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 p {
 	line-height: 120%;
 	font-family: 'Muli', sans-serif;
@@ -161,21 +170,11 @@ p {
     border: 1px solid lightgrey;
 }
 
-input:hover {
-    color: #E2450E;
-    border: 1px solid #E2450E;
-}
-
 textarea {
     padding: 10px;
     margin: 10px;
     font-family: 'muli';
     width: 400px;
-}
-
-textarea:hover {
-    color: #E2450E;
-    border: 1px solid #E2450E;
 }
 
 .orange-btn {
@@ -634,6 +633,11 @@ margin-bottom: 10%;
 	align-items: center;
 	color: #503327;
 }
+
+.home_prez_product {
+    padding: 10px;
+}
+
 .shop > div.row > div > div:last-child {
 	height: 45%;
 }
@@ -1012,6 +1016,27 @@ height: 25px;
 }
 .faq .reponse_forum, .faq .question_forum {
 	text-align: center;
+}
+
+.tchat_fenetre {
+    height: 500px;
+    overflow:auto;
+    padding: 10px;
+    border: 1px solid #926755;
+}
+
+.message-block {
+    padding: 20px;
+}
+
+.tchat_pseudo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tchat_date {
+    font-size: 0.8em;
+    font-style: italic;
 }
 
 /* PAGE 404 */
@@ -1616,6 +1641,10 @@ section.section_fiche > div:last-child > div {
 
 .blanc {
     color: #fff;
+}
+
+.black {
+    color: #000;
 }
 
 .violet {

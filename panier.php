@@ -2,7 +2,9 @@
 
     require_once('include/requires.inc.php');
     require_once('include/header.inc.php');
-
+if(!empty($_GET['suppr']) && is_numeric($_GET['suppr'])) {
+    deleteFromCart($_GET['suppr']);
+}
 ?>
 
 <div class="container">
@@ -102,14 +104,6 @@
     endif;
 ?>
 </div>
-<?php
-
-if ($totalPanier > 0)
-{
-    $_SESSION['totalPanier'] = $totalPanier;
-    #dd($_SESSION['totalPanier']);
-}
-?>
 <div id="paypal-button"></div>
 
 <div id="response"></div>
@@ -118,9 +112,7 @@ if ($totalPanier > 0)
 
 <script>
     paypal.Button.render({
-        env: 'sandbox', // Or 'sandbox',
-
-        //commit: true,
+        env: 'sandbox',
 
         locale: 'fr_FR',
 
@@ -150,7 +142,6 @@ if ($totalPanier > 0)
                 console.log(data);
                 var response = '<p> Merci de votre achat de ' + data.transactions[0]["amount"].total + ' € </p>';
                 document.getElementById('response').innerHTML = response;
-                //console.log(data["transactions"][0]["amount"]["total"]);
                 console.log(data.transactions[0]["amount"].total);
             }).catch(function (err)
             {

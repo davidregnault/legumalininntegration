@@ -12,15 +12,9 @@ $(function(){
       };
 
       $.post('reception.php', objetEnvoye, function(data){
-        // data correpsond a ce qui est "echo" par le fichier PHP du serveur
         $('#titreMessages').after(data.message);
-
-
+        console.log(data.message);
       }, 'JSON');
-
-
     }
-
-
   });
 });

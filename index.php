@@ -40,7 +40,7 @@
 				<h2>Actualités</h2>
 			</div>
 			<div class="column middle">
-				<h3>Une labelisation complémentaire pour le marché bio européen</h3>
+				<h3 class="blanc">Une labelisation complémentaire pour le marché bio européen</h3>
 				<div class="row middle slider">
 					<div>
 						<img src="img/left-arrow.png">
@@ -70,8 +70,8 @@
 		<div class="row middle">
 			<div>
 				<div>
-					<div>GRAINES BETTERAVES CHIOGGIA</div>
-					<div>Variété de betteraves originale. D'excellente qualité gustative, cette betterave décorera gaiement vos plats. </div>
+					<h3 class="marron_clair">GRAINES BETTERAVES CHIOGGIA</h3>
+					<p>Variété de betteraves originale. D'excellente qualité gustative, cette betterave décorera gaiement vos plats. </p>
 				</div>
 				<div id="shop_product_1">
 					<div class="btn brown-btn">
@@ -82,8 +82,8 @@
 
 			<div>
 				<div>
-					<div>FERTILISANT BIOLOGIQUE COMPLET</div>
-					<div>Fertilisant organique completPour des légumes plus savoureux, plus volumineux et plus abondants.</div>
+					<h3 class="marron_clair">FERTILISANT BIOLOGIQUE COMPLET</h3>
+					<p>Fertilisant organique completPour des légumes plus savoureux, plus volumineux et plus abondants.</p>
 				</div>
 				<div id="shop_product_2">
 					<div class="btn brown-btn">
@@ -93,8 +93,8 @@
 			</div>
 			<div>
 				<div>
-					<div>GRAINES AUBERGINES BARBENTANE</div>
-					<div>Variété rustique résistante à la plupart des maladies. Elle produit des fruits allongés en forme de massue, violet foncé. </div>
+					<h3 class="marron_clair">GRAINES AUBERGINES BARBENTANE</h3>
+					<p>Variété rustique résistante à la plupart des maladies. Elle produit des fruits allongés en forme de massue, violet foncé. </p>
 				</div>
 				<div id="shop_product_3">
 					<div class="btn brown-btn">

@@ -1,7 +1,7 @@
 <footer>
     <section class="row middle newsletter">
         <div class="row middle around">
-            <div>S'INSCRIRE A LA NEWSLETTER ?</div>
+            <h4 class="blanc">S'INSCRIRE A LA NEWSLETTER ?</h4>
             <input type="email" name="newsletter" placeholder="Adresse mail">
             <div class="btn green-btn"><a href="">S'inscrire</a></div>
         </div>

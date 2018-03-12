@@ -1,3 +1,8 @@
+<?php
+    require_once('include/functions.php');
+
+    $connected = isConnected();
+?>
 <header class="type_header">
     <nav class="column middle">
         <ul class="row middle">
@@ -14,8 +19,8 @@
             <div class="row between">
                 <div class="column middle" id="btn_aside"><img id="img_aside" src="img/aside-left-arrow.png"></div>
                 <div class="row">
-                    <a href=""><img src="img/shop.png"></a>
-                    <a href=""><img src="img/user.png"></a>
+                    <a href="panier.php"><img src="img/shop.png"></a>
+                    <a href="<?= ($connected) ? 'profil.php' : 'login.php'; ?>"><img src="img/user.png"></a>
                 </div>
             </div>
         </aside>
