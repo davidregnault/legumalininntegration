@@ -19,13 +19,10 @@
             <div class="row between">
                 <div class="column middle" id="btn_aside"><img id="img_aside" src="img/aside-left-arrow.png"></div>
                 <div class="row">
-<<<<<<< HEAD
                     <a href="panier.php"><img src="img/shop.png"></a>
                     <a href="<?= ($connected) ? 'profil.php' : 'login.php'; ?>"><img src="img/user.png"></a>
-=======
                     <a href=""><img src="img/shop.png"></a>
                     <a href="profil_proprietaire.php"><img src="img/user.png"></a>
->>>>>>> fcd5acd6237a9570e0ff3c2e710e69dbaa430766
                 </div>
             </div>
         </aside>
