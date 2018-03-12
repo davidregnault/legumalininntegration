@@ -15,7 +15,7 @@
                 <div class="column middle" id="btn_aside"><img id="img_aside" src="img/aside-left-arrow.png"></div>
                 <div class="row">
                     <a href=""><img src="img/shop.png"></a>
-                    <a href=""><img src="img/user.png"></a>
+                    <a href="profil_proprietaire.php"><img src="img/user.png"></a>
                 </div>
             </div>
         </aside>
