@@ -35,7 +35,7 @@
 				<div class="distance-jardin">Distance : <span>34Km</span></div>
 				<div class="taille-jardin">Taille : <span>80 m2</span></div>
 				<div class="date-publication-jardin">Pulié le : <span>08-03-2018</span></div>
-				<div class="btn green-btn"><a href="fiche-jardin.php">Ajouter au panier</a></div>
+				<div class="btn green-btn"><a href="fiche-jardin.php">S'inscrire</a></div>
 			</div>
 		</div>
 	</section>

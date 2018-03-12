@@ -617,7 +617,10 @@ margin-bottom: 10%;
 .shop {
 	height: 70vh;
 	background-color: #E6E6E6;
-} 
+}
+.shop h2 {
+	margin-top: 0.5em;
+}
 .shop > div {
 	width: 80%;
 	height: 20%;
