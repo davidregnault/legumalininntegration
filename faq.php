@@ -1,5 +1,5 @@
 <?php
-require_once('init.inc.php');
+require_once('requires.inc.php');
 //--------------------------------
 
 if(isset($_POST['soumettre'])) {
