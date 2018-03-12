@@ -21,9 +21,7 @@
                 <div class="row">
                     <a href="panier.php"><img src="img/shop.png"></a>
                     <a href="<?= ($connected) ? 'profil.php' : 'login.php'; ?>"><img src="img/user.png"></a>
-                    <a href=""><img src="img/shop.png"></a>
-                    <a href="profil_proprietaire.php"><img src="img/user.png"></a>
-                </div>
+              </div>
             </div>
         </aside>
 </header>
