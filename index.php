@@ -41,35 +41,25 @@
 			</div>
 			<div class="column middle">
 				<h3>Une labelisation complémentaire pour le marché bio européen</h3>
-			</div>
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-			    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			    </ol>
-			    <div class="carousel-inner">
-			    	<div class="carousel-item active">
-			      		<img class="d-block w-100" src="..." alt="First slide">
-			    	</div>
-			    	<div class="carousel-item">
-			      		<img class="d-block w-100" src="..." alt="Second slide">
-			    	</div>
-			    	<div class="carousel-item">
-			      		<img class="d-block w-100" src="..." alt="Third slide">
-			    	</div>
-			  	</div>
-			  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    	<span class="sr-only">Previous</span>
-			  	</a>
-			  	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    	<span class="sr-only">Next</span>
-			  </a>
+				<div class="row middle slider">
+					<div>
+						<img src="img/left-arrow.png">
+					</div>
+					<div class="row middle">
+						<div class="column middle">
+							<img src="img/AB.jpg">
+						</div>
+						<div class="column between">
+							<p>Déçue par le compromis trouvé sur le règlement bio européen, la Fnab souhaite une labellisation nationale plus exigeante, complémentaire de l’eurofeuille. En effet, elle propose une labellisation française complémentaire du label européen pour conserver la confiance des consommateurs.</p>
+							<div class="btn white-btn"><a href="">Lire la suite</a></div>
+						</div>
+					</div>
+					<div>
+						<img src="img/right-arrow.png">
+					</div>
+				</div>
 			</div>
 		</div>
-
 	</section>
 
 	<section class="shop">

@@ -13,7 +13,7 @@
 <main class="column">
 	<h1>Mentions légales</h1>
 	<section class="column">
-		<div class="column middle">
+		<div>
 			<h3>Editeur du site</h3>
 			<p>Legumalin<br />
 				28 place de la Bourse <br />
@@ -23,13 +23,13 @@
 				http://dregnault.eemi.tech/legumalininntegration/
 			</p>
 		</div>
-		<div class="column middle">
+		<div>
 			<h3>Conditions d'utilisation</h3>
 			<p>Le site accessible par les url suivants : http://dregnault.eemi.tech/legumalininntegration/ est exploité dans le respect de la législation française. L'utilisation de ce site est régie par les présentes conditions générales. En utilisant le site, vous reconnaissez avoir pris connaissance de ces conditions et les avoir acceptées. Celles-ci pourront êtres modifiées à tout moment et sans préavis par la société Légumalin.<br />
 			Légumalin ne saurait être tenu pour responsable en aucune manière d’une mauvaise utilisation du service.
 			</p>
 		</div>
-		<div class="column middle">
+		<div>
 			<h3>Conditions d'utilisation</h3>
 			<p>Le site accessible par les url suivants : http://dregnault.eemi.tech/legumalininntegration/ est exploité dans le respect de la législation française. L'utilisation de ce site est régie par les présentes conditions générales. En utilisant le site, vous reconnaissez avoir pris connaissance de ces conditions et les avoir acceptées. Celles-ci pourront êtres modifiées à tout moment et sans préavis par la société Légumalin.<br />
 			Légumalin ne saurait être tenu pour responsable en aucune manière d’une mauvaise utilisation du service.

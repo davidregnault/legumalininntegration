@@ -449,7 +449,6 @@ aside #img_aside {
 }
 
 
-
 .accueil header h1 span{
 	color: #224A1D;
 }
@@ -962,6 +961,7 @@ height: 25px;
 }
 .mentions main section > div {
 	margin-bottom: 5%;
+	width: 98%;
 }
 .mentions main h3 {
 	margin-bottom: 3%;
