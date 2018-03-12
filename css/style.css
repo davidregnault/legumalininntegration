@@ -447,25 +447,7 @@ aside #img_aside {
 	border-radius: 100px 0px 0px 100px;
 	transition: ease-out all 1s;
 }
-.accueil aside div {
-	justify-content: space-around;
-	height: 100%;
-	width: 70%;
-}
-.accueil aside div:first-child {
-	height: 100%;
-	width: 20%;
-	cursor: pointer;
-}
-.accueil aside a {
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.accueil aside img {
-	height: 60%;
-}
+
 
 
 .accueil header h1 span{
@@ -617,7 +599,10 @@ margin-bottom: 10%;
 .shop {
 	height: 70vh;
 	background-color: #E6E6E6;
-} 
+}
+.shop h2 {
+	margin-top: 0.5em;
+}
 .shop > div {
 	width: 80%;
 	height: 20%;
@@ -969,10 +954,20 @@ height: 25px;
 }
 
 /* PAGE MENTIONS LEGALES */
-.mentions section {
+.mentions main section {
 	width: 80%;
 }
-.mentions p {
+.mentions main section > div * {
+	width: 100%;
+}
+.mentions main section > div {
+	margin-bottom: 5%;
+}
+.mentions main h3 {
+	margin-bottom: 3%;
+	font-size: 1.8em;
+}
+.mentions main p {
 	margin-bottom: 1%;
 }
 
