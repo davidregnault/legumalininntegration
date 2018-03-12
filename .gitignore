@@ -3,3 +3,6 @@ include/pdo.inc.php
 legumalin/.idea/
 legumalin/includes/pdo.inc.php
 vendor/
+payment.php
+paypal.php
+pay.php

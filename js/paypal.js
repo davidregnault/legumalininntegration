@@ -1,34 +1,41 @@
 paypal.Button.render({
-    env: 'production', // Or 'sandbox',
+    env: 'sandbox', // Or 'sandbox',
 
-    commit: true, // Show a 'Pay Now' button
+    //commit: true,
+
+    locale: 'fr_FR',
 
     style: {
-        color: 'gold',
-        size: 'small'
+        size: 'medium',
+        color: 'blue',
+        shape: 'rect',
+        label: 'checkout'
     },
 
     payment: function(data, actions) {
-        /*
-         * Set up the payment here
-         */
+
+        return paypal.request.post('payment.php').then(function(data)
+        {
+            return data.id;
+        });
     },
 
     onAuthorize: function(data, actions) {
-        /*
-         * Execute the payment here
-         */
-    },
 
-    onCancel: function(data, actions) {
-        /*
-         * Buyer cancelled the payment
-         */
-    },
-
-    onError: function(err) {
-        /*
-         * An error occurred during the transaction
-         */
+        return paypal.request.post('pay.php',
+            {
+                paymentID: data.paymentID,
+                payerID: data.payerID
+            }).then(function(data)
+        {
+            console.log(data);
+            var response = '<p> Merci de votre achat de ' + data.transactions[0]["amount"].total + ' € </p>';
+            document.getElementById('response').innerHTML = response;
+            //console.log(data["transactions"][0]["amount"]["total"]);
+            console.log(data.transactions[0]["amount"].total);
+        }).catch(function (err)
+        {
+            console.log('erreur', err);
+        });
     }
-}, '#paypal-button');
+}, '#paypal');
