@@ -1,4 +1,4 @@
-<footer>
+<footer class="mobile_display_none">
     <section class="row middle newsletter">
         <div class="row middle around">
             <div>S'INSCRIRE A LA NEWSLETTER ?</div>

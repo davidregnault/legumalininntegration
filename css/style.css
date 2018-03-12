@@ -183,7 +183,9 @@ textarea:hover {
 	color: white;
 }
 
-
+#btn_nav {
+	display: none;
+}
 
 
 button {
@@ -343,7 +345,7 @@ aside {
 }
 .accueil aside {
 	position: fixed;
-	top: 10%;
+	top: 22%;
 	right: 0%; /* -8% en JS */
 	height: 5%;
 	width: 10%;
@@ -379,6 +381,14 @@ aside #img_aside {
 	margin-right: 30%;
 }
 
+.aside_ouvert, .accueil .aside_ouvert {
+	right: 0%;
+}
+.aside_fermer, .accueil .aside_fermer {
+	right: -8%;
+}
+
+
 
 
 
@@ -410,7 +420,7 @@ aside #img_aside {
 .accueil header ul a:hover {
 	background-color: #398E3D;
 }
-.accueil header ul li#img-nav {
+.accueil header ul li.img-nav {
 	padding-left: 5%;
 	padding-right: 5%;
 	margin-top: 0;
@@ -437,18 +447,6 @@ aside #img_aside {
 }
 
 
-.accueil aside {
-	position: fixed;
-	top: 25%;
-	right: 0%; /* -8% en JS */
-	height: 5%;
-	width: 10%;
-	background-color: #1B191C;
-	border-radius: 100px 0px 0px 100px;
-	transition: ease-out all 1s;
-}
-
-
 .accueil header h1 span{
 	color: #224A1D;
 }
@@ -464,6 +462,7 @@ aside #img_aside {
 	background-image: url(../img/fond_wave.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 .concept h2 {
 	margin-bottom: 3%;
@@ -514,10 +513,6 @@ aside #img_aside {
 	border-radius: 10px;
 	justify-content: space-around;
 	box-shadow: 1px 1px 1px grey;
-}
-.garden div.button {
-margin-top: 8%;
-margin-bottom: 10%;
 }
 .garden img {
 	width: 45%;
@@ -1612,6 +1607,9 @@ section.section_fiche > div:last-child > div {
 
 
 
+
+
+
 /* COULEURS */
 
 .blanc {
@@ -1632,5 +1630,220 @@ section.section_fiche > div:last-child > div {
 .displayNone {
 	display: none !important;
 }
+.desktop_display_none {
+	display: none !important;
+}
+
+
+@media (max-width: 1100px) {
+  
+  
+.row {
+	flex-direction: column;
+}
+
+
+nav, nav ul, aside, aside > div, aside > div > div:last-child, .news div.row, footer div.row {
+	flex-direction: row !important;
+}
+.accueil header nav ul li {
+	width: calc(100% / 7)
+}
+.type_header {
+	height: 10vh;
+}
+
+/* FOOTER */ 
+
+footer {
+	height: 15vh;
+}
+.newsletter {
+	height: 7vh;
+}
+
+/* ASIDE */
+
+.accueil aside, aside {
+	width: 25%;
+	height: 6%;
+}
+.aside_fermer, .accueil .aside_fermer {
+	right: -17%;
+}
+/* PAGE ACCUEIL */
+
+/* CONCEPT */
+.concept p {
+	width: 60%;
+	padding-left: 2%;
+}
+
+/* JARDINIER OU PROPRIETAIRE */
+
+.garden > div {
+	width: 70%;
+	height: 80%;
+	margin-bottom: 3%;
+	margin-top: 2%;
+}
+.garden div.btn {
+	margin-bottom: 3%;
+}
+
+
+
+.news div.column.middle > div.row.middle.slider > div.row.middle > div.column.between {
+	height: 50%;
+}
+
+
+.shop {
+	height: 110vh;
+}
+.shop > div:first-child {
+	height: 12%;
+}
+.shop > div.row > div {
+	width: 50%;
+	height: 70%;
+	margin-bottom: 4%;
+}
+
+
+}
+
+
+@media (max-width: 700px) {
+
+.mobile_display_none {
+	display: none !important;
+}
+.desktop_display_none {
+	display: block;
+}
+
+.accueil aside, aside {
+	width: 38%;
+	height: 7%;
+	top: 2%;
+}
+.accueil header div.column {
+	height: 100%;
+}
+.aside_fermer, .accueil .aside_fermer {
+	right: -27%;
+}
+
+#btn_nav {
+	display: block;
+	position: fixed;
+	top: 2%;
+	left: 4%;
+	height: 7%;
+}
+
+
+.accueil .nav_home_mobile {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 20;
+	transition: ease-out all 1s;
+}
+.accueil .nav_home_mobile ul.row{
+	flex-direction: column !important;
+	align-items: center;
+	height: 100%;
+	width: 40%;
+}
+.accueil .nav_home_mobile span{
+	height: 100%;
+	width: 60%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.accueil header nav ul li {
+	height: calc(100% / 8);
+	width: 100%;
+}
+.accueil header nav ul li.img-nav {
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
+.accueil header nav ul li.img-nav a{
+	height: 100%;
+}
+.accueil header nav ul li.img-nav img{
+	width: 30%;
+}
+
+
+.accueil .concept, .garden {
+	background-image: none;
+}
+.accueil .concept {
+	justify-content: initial;
+	height: 60vh;
+}
+.accueil .concept > div.bottom-left {
+	width: 90%;
+	height: initial;
+}
+.accueil .concept h2 {
+	text-align: center;
+	margin-top: 6%;
+}
+.accueil .concept p {
+	width: 100%;
+	padding: 0;
+}
+.accueil .garden {
+	height: 160vh;
+}
+.accueil .garden > div {
+	width: 90%;
+}
+.accueil .garden > div:first-child {
+	height: 65vh;
+}
+.accueil .garden > div:last-child {
+	height: 80vh;
+}
+
+.accueil .news > div > div:last-child > div{
+	width: 90%;
+}
+
+.accueil .shop {
+	height: 180vh;
+}
+.accueil .shop > div:last-child > div{
+	width: 100%;
+}
+
+
+
+
+
+.accueil .nav_mobile_ouvert {
+	left: 0;
+}
+.accueil .nav_mobile_fermer {
+	left: -100%;
+}
+
+
+}
+
+
+
+
+
+
 
 

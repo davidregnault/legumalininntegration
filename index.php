@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<meta description="Bonjour">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Légumalin - Accueil</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -42,11 +41,11 @@
 			<div class="column middle">
 				<h3>Une labelisation complémentaire pour le marché bio européen</h3>
 				<div class="row middle slider">
-					<div>
+					<div class="mobile_display_none">
 						<img src="img/left-arrow.png">
 					</div>
 					<div class="row middle">
-						<div class="column middle">
+						<div class="column middle mobile_display_none">
 							<img src="img/AB.jpg">
 						</div>
 						<div class="column between">
@@ -54,7 +53,7 @@
 							<div class="btn white-btn"><a href="">Lire la suite</a></div>
 						</div>
 					</div>
-					<div>
+					<div class="mobile_display_none">
 						<img src="img/right-arrow.png">
 					</div>
 				</div>

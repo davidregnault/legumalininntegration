@@ -10,7 +10,7 @@
             <li><a href="boutique.php">boutique</a></li>
         </ul>
     </nav>
-    <aside class="row middle">
+    <aside class="row middle aside_ouvert">
             <div class="row between">
                 <div class="column middle" id="btn_aside"><img id="img_aside" src="img/aside-left-arrow.png"></div>
                 <div class="row">
