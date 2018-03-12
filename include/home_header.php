@@ -1,5 +1,5 @@
 <header>
-    <img id="btn_nav" src="img/menu.png">
+    <img id="btn_nav" class="desktop_display_none" src="img/menu.png">
     <nav class="row middle nav_home_mobile nav_mobile_fermer">
         <ul class="row middle">
             <li class="img-nav desktop_display_none"><a href="index.php"><img src="img/legumalin_etiquette.png" /></a></li>
@@ -26,6 +26,5 @@
 
     <div class="column middle">
         <h1>Le partage de potager<br /> <span class="green">bio</span> et responsable</h1>
-        <img src="img/">
     </div>
 </header>
