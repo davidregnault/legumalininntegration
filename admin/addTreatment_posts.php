@@ -1,6 +1,6 @@
 <?php
 
-require_once('../include/requires.inc.php');
+require_once('includes/requires.inc.php');
 
 if ((!empty($_POST['hidden_id']) && is_numeric($_POST['hidden_id'])) && isset($_POST['modifier']))
 {
@@ -20,7 +20,7 @@ if ((!empty($_POST['hidden_id']) && is_numeric($_POST['hidden_id'])) && isset($_
 
     $_SESSION['flashMessage'] = flashMessage('modifier', $title);
 
-    header('Location:post.php');
+    header('Location:http://127.0.0.1/legumalin/post.php');
 }
 elseif ((!empty($_POST) && !isset($_POST['hidden_id'])) && isset($_POST['ajouter']))
 {
@@ -41,5 +41,5 @@ elseif ((!empty($_POST) && !isset($_POST['hidden_id'])) && isset($_POST['ajouter
     $_SESSION['flashMessage'] = flashMessage('add', $title);
 
     #dd($_SESSION['flashMessage']);
-    header('Location:post.php');
+    header('Location:http://127.0.0.1/legumalin/post.php');
 }

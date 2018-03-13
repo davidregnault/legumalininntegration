@@ -1,19 +1,23 @@
 <?php
-require_once ('../include/requires.inc.php');
+require_once ('includes/requires.inc.php');
 
 $TITLE = 'Gestion utilisateurs';
-require_once('../include/header.inc.php');
+require_once('includes/header.inc.php');
+
+
+$connected = adminConnexion();
+
+if ($connected)
+{
+    flashMessage('connected');
+}
+isFlashMessage();
 
 $productsArray = selectAll('users');
+
 ?>
 
-<ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">Home</a></li>
-    <li role="presentation"><a href="">Utilisateurs</a></li>
-    <li role="presentation"><a href="">Produits</a></li>
-    <li role="presentation"><a href="">Actualités</a></li>
-</ul>
-
+<?php require_once('includes/nav.inc.php'); ?>
 
 <?php
 if(!empty($productsArray)) :
@@ -40,9 +44,12 @@ if(!empty($productsArray)) :
             <tr>
                 <td><?= $eachProducts['id']; ?></td>
                 <td><?= $eachProducts['name']; ?></td>
+                <td><?= $eachProducts['surname']; ?></td>
+                <td><?= $eachProducts['login']; ?></td>
                 <td><?= $eachProducts['email']; ?></td>
                 <td><?= $eachProducts['password']; ?></td>
-                <td><?= $eachProducts['remember_token']; ?></td>
+                <td><?= $eachProducts['avatar']; ?></td>
+                <td><?= ($eachProducts['statut'] == 1) ? "Propriétaire" : "Jardinier"; ?></td>
              </tr>
         <?php
         endforeach;
@@ -57,7 +64,7 @@ else:
     </div>
 <?php
 endif;
-dd($productsArray);
+#dd($productsArray);
 ?>
 
 

@@ -34,7 +34,7 @@ if ($connected && $_COOKIE['statut'] == 1)
             <div class="row between">
                 <div class="column middle" id="btn_aside"><img id="img_aside" src="img/aside-left-arrow.png"></div>
                 <div class="row">
-                    <a href="panier.php"><img src="img/shop.png"></a>
+                    <a href="boutique.php"><img src="img/shop.png"></a>
                     <a href="<?= $redirect ?>"><img src="img/user.png"></a>
               </div>
             </div>

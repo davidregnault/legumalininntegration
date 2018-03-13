@@ -75,7 +75,7 @@
 				</div>
 				<div id="shop_product_1">
 					<div class="btn brown-btn">
-						<a href="">voir fiche</a>
+						<a href="http://qchampeno.eemi.tech/legumalin/boutique.php">voir fiche</a>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 				</div>
 				<div id="shop_product_2">
 					<div class="btn brown-btn">
-						<a href="">voir fiche</a>
+						<a href="http://qchampeno.eemi.tech/legumalin/boutique.php">voir fiche</a>
 					</div>
 				</div>
 			</div>
@@ -98,7 +98,7 @@
 				</div>
 				<div id="shop_product_3">
 					<div class="btn brown-btn">
-						<a href="">voir fiche</a>
+						<a href="http://qchampeno.eemi.tech/legumalin/boutique.php">voir fiche</a>
 					</div>
 				</div>
 			</div>

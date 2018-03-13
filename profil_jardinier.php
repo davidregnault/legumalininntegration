@@ -27,6 +27,15 @@
         </div>
         </div>
     </div>
+    <div class="row between profil_bouton">
+        <div class="modif_settings"><!-- C'est cette div qu'on cache selon qu'on soit sur son profil ou non -->
+        <div class="btn orange-btn">
+            <a href="logout_treatment.php">
+                <p>Me deconnecter</p>
+            </a>
+        </div>
+        </div>
+    </div>
 </section>
 <main>
 

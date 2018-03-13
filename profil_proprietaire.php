@@ -38,6 +38,12 @@
                     Modifier mon profil
                 </a>
             </div>
+        </div>        <div class="modif_settings"><!-- C'est cette div qu'on cache selon qu'on soit sur son profil ou non -->
+            <div class="btn green-btn">
+                <a href="logout_treatment.php" class="green">
+                    Me déconnecter
+                </a>
+            </div>
         </div>
     </div>
 </section>

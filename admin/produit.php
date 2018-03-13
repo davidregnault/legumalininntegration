@@ -1,8 +1,9 @@
 <?php
-require_once('../include/requires.inc.php');
+require_once('includes/requires.inc.php');
 
 $produit = selectOne('products', 'product_id', $_GET['produit']);
 
+#dd($produit);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,7 +16,7 @@ $produit = selectOne('products', 'product_id', $_GET['produit']);
 </head>
 <body class="produit">
 
-<?php require_once('../include/header.inc.php'); ?>
+<?php require_once('includes/header.php'); ?>
 
 <section class="row middle section_filtre">
     <div class="column between">
@@ -52,8 +53,8 @@ $produit = selectOne('products', 'product_id', $_GET['produit']);
     </section>
 
 </main>
-<?php require_once('../include/cookies.php'); ?>
-<?php require_once('../include/footer.php'); ?>
+<?php require_once('includes/cookies.php'); ?>
+<?php require_once('includes/footer.php'); ?>
 
 <script src="assets/js/script.js"></script>
 </body>

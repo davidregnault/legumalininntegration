@@ -1,5 +1,5 @@
 <?php
-require_once('include/requires.inc.php');
+require_once('include/pdo.inc.php');
 
 try
 {

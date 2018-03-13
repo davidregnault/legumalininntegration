@@ -1,8 +1,8 @@
 <?php
-require_once ('../include/requires.inc.php');
+require_once ('includes/requires.inc.php');
 
 $TITLE = 'Affichage articles';
-require_once('../include/header.inc.php');
+require_once('includes/header.inc.php');
 
 if(!empty($_GET['delete']) && is_numeric($_GET['delete']))
 {
@@ -19,21 +19,20 @@ if(!empty($_GET['delete']) && is_numeric($_GET['delete']))
     header('Location:post.php');
 }
 
-if (!empty($_SESSION['flashMessage'])):
-    echo $_SESSION['flashMessage'];
-endif;
+$connected = adminConnexion();
+
+if ($connected)
+{
+    flashMessage('connected');
+}
+isFlashMessage();
 
 $postsArray = selectAll('posts');
 ?>
 
-<ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">Home</a></li>
-    <li role="presentation"><a href="">Utilisateurs</a></li>
-    <li role="presentation"><a href="">Produits</a></li>
-    <li role="presentation"><a href="">Actualités</a></li>
-</ul>
+<?php require_once('includes/nav.inc.php'); ?>
 
-<a href="addForm_posts.php">+ nouveau produit</a>
+<a href="addForm_posts.php">+ nouvel article</a>
 <?php
 if(!empty($postsArray)) :
     ?>
@@ -81,7 +80,7 @@ else:
     </div>
 <?php
 endif;
-dd($postsArray);
+#dd($postsArray);
 ?>
 
 <!--<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>-->

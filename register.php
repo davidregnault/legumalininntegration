@@ -17,10 +17,9 @@ if ( (!empty($_GET['statut']) && $_GET['statut'] === 'jardinier') || (!empty($_G
         $checked_p = 'checked';
     }
 }
-
 ?>
-
-<h1><?= (!empty($statut)) ? "Bonjour, vous souhaitez vous enregistrer en tant que $statut !" : "Créez votre compte Légumalin ! "  ?></h1>
+<main class="register">
+ <h1><?= (!empty($statut)) ? "Bonjour, vous souhaitez vous enregistrer en tant que $statut!" : "Créez vous un compte Légumalin ! "; ?></h1>
 
     <form method="post" action="register_treatment.php">
         <div class="form-group">
@@ -65,5 +64,6 @@ if ( (!empty($_GET['statut']) && $_GET['statut'] === 'jardinier') || (!empty($_G
         </div>
         <input type="submit" name="submit" value="S'inscrire"/>
     </form>
+</main>
 </body>
 </html>
