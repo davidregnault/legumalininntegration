@@ -1,3 +1,4 @@
+
 $(function(){
   $('#formMessage').on('keypress', function(e) {
     if(e.keyCode === 13) {
@@ -13,8 +14,16 @@ $(function(){
 
       $.post('reception.php', objetEnvoye, function(data){
         $('#titreMessages').after(data.message);
-        console.log(data.message);
+        //console.log(data.message);
       }, 'JSON');
+
+      $('#message').val(''); // clear the message box
+      $('#message').on('focus', function() {
+        this.value = '';
+        });
+        $('#pseudo').attr('disabled', 'disabled');
+
     }
   });
 });
+

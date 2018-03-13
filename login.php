@@ -1,7 +1,7 @@
 <?php
     require_once('include/requires.inc.php');
     require_once('include/header.inc.php');
-
+    require_once('include/header.php');
 isFlashMessage();
 
 ?>
@@ -19,5 +19,6 @@ isFlashMessage();
             <button type="submit" class="btn btn-primary" name="submit">Se connecter</button>
         </form>
 
+        <a href="register.php">Créer un compte Légumalin !</a>
 </body>
 </html>

@@ -16,16 +16,15 @@
 		<h1>Plan du site</h1>
 		<div class="row middle around">
 			<ul class="column middle around">
-				<li><a href="index.php">Accueil</a></li>
-				<li><a href="forum.php">Forum</a></li>
-				<li><a href="tutoriels.php">Tutoriels</a></li>
-				<li><a href="a-propos.php">A propos</a></li>
+				<li><a href="index.php" class="legende blanc">Accueil</a></li>
+				<li><a href="forum.php" class="legende blanc">Forum</a></li>
+				<li><a href="tutoriels.php" class="legende blanc">Tutoriels</a></li>
+				<li><a href="a-propos.php" class="legende blanc">A propos</a></li>
 			</ul>
 			<ul class="column middle around">
-				<li><a href="jardins.php">Nos jardins</a></li>
-				<li><a href="actualites.php">Actualites</a></li>
-				<li><a href="boutique.php">Boutique</a></li>
-				<li><a href="index.php">Accueil</a></li>
+				<li><a href="jardins.php" class="legende blanc">Nos jardins</a></li>
+				<li><a href="actualites.php" class="legende blanc">Actualites</a></li>
+				<li><a href="boutique.php" class="legende blanc">Boutique</a></li>
 			</ul>
 		</div>
 	</section>

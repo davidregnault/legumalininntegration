@@ -36,7 +36,8 @@ if (ini_get("session.use_cookies")) {
     }
     else
     {
-        dd('fuck !');
+        header('Location:index.php');
+        $_SESSION['flashMessage'] = flashMessage('error');
     }
 
     session_destroy();

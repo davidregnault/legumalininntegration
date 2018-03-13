@@ -24,10 +24,23 @@ $messages = $resultat->fetchAll(PDO::FETCH_ASSOC);
 <body class="faq">
 <?php include "include/header.php"; ?>
 
+<div class="row middle section_filtre">
+    <div class="column between">
+        <h1>Forum</h1>
+        <div class="page_description_head">
+            <p>Ou foire aux questions (FAQ), l'endroit où vous pouvez directement échanger avec la communauté de Légumalin</p>
+        </div>
+    </div>
+    <div class="column between">
+    </div>
+</div>
+
 <main class="column">
-    <h1>Forum (FAQ)</h1>
     <section>
-        <h2>Les questions les plus posées</h2>
+        <div>
+            <h2>Les questions les plus posées</h2>
+        </div>
+
         <section class="col middle between">
 
             <div>
@@ -97,7 +110,7 @@ $messages = $resultat->fetchAll(PDO::FETCH_ASSOC);
                     <div class="row">
                         <div class="col-md-6">
                             <?php if(!empty($msg)) { echo $msg; } ?>
-                            <form id="formMessage" method="post" action="">
+                            <form  id="formMessage" method="post" action="">
                                 <div class="input-group">
                                     <input type="text" id="pseudo" name="pseudo" class="form-control" placeholder="@Votre pseudo" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
@@ -107,8 +120,8 @@ $messages = $resultat->fetchAll(PDO::FETCH_ASSOC);
                             </form>
                         </div>
                     </div>
-                    <h3 class="article_titre black" id="titreMessages">Affichage des messages</h3>
                     <div class="tchat_fenetre">
+                    <h3 class="article_titre black" id="titreMessages">Affichage des messages</h3>
                         <?php
                          foreach($messages as $key => $value) :
                         ?>

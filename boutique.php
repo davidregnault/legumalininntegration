@@ -26,20 +26,20 @@
 			<div></div>
 			<div class="row between">
 				<div class="filtres_boutique">
-					<span>Filtres</span>
+					<span class="legende blanc">Filtres</span>
 					<div class="row between">
-						<div>Engrais</div>
-						<div>Graines</div>
-						<div>Matériel</div>
+						<div class="filter_name">Engrais</div>
+						<div class="filter_name">Graines</div>
+						<div class="filter_name">Matériel</div>
 					</div>
 				</div>
 				<div class="filtres_boutique">
-					<span>Par saison</span>
+					<span class="legende blanc">Par saison</span>
 					<div class="row between">
-						<div>Automne</div>
-						<div>Hiver</div>
-						<div>Printemps</div>
-						<div>Eté</div>
+						<div class="filter_name">Automne</div>
+						<div class="filter_name">Hiver</div>
+						<div class="filter_name">Printemps</div>
+						<div class="filter_name">Eté</div>
 					</div>
 				</div>
 			</div>
@@ -54,10 +54,9 @@
                 </div>
 				<div>
 					<div>
-						<div class="titre-fiche"><span><?= $product['title']; ?></span></div>
+						<div class="titre-fiche"><h4 class="green"><?= $product['title']; ?></h4></div>
 						<div class="prix-produit"><?= $product['price']; ?> €</div>
-						<div class="description-produit"><?= $product['description']; ?></div>
-						<div class="distance-jardin">Distance : <span>34Km</span></div>
+						<div class="description-produit"><p><?= $product['description']; ?></p></div>
 						<div class="btn green-btn"><a href="produit.php?id=<?= $product['product_id']; ?>">Acheter</a></div>
 					</div>
 				</div>

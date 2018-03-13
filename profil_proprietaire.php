@@ -1,3 +1,15 @@
+<?php
+
+    require_once('include/requires.inc.php');
+
+    $select = selectOne('users', 'login', $_COOKIE['pseudo'], PDO::PARAM_INT);
+
+    $selectInfos = $pdo->prepare('SELECT * FROM users, informations WHERE informations = informations.id AND users.id = :login');
+
+    $selectInfos->bindValue(':login', $_COOKIE['pseudo']);
+
+    $selectArray = $selectInfos->execute();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +47,7 @@
 
         <div class="profil_jardinier_id">
 
-            <h3 class="profil_jardinier_h3 green">Prénom nom</h3>
+            <h3 class="profil_jardinier_h3 green"><?= $select['surname'] .' ' . $select['name']; ?></h3>
             <div class="profile_bloc">
                 <div class="profile_img" style=" background: url(img/nain.jpg) center;"></div>
 

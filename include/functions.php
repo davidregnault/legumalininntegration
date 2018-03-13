@@ -134,24 +134,24 @@ function flashMessage($element, $name = null)
     switch ($element)
     {
         case 'add':
-            return "<div class='alert alert-success' role='alert'>Ajout du produit : \" $name \" effectué avec succès</div>";
+            return "<div class='alert alert-success' style='margin-top:50px;' role='alert'>Ajout du produit : \" $name \" effectué avec succès</div>";
             break;
         case 'modify':
-            return "<div class='alert alert-success' role='alert'>Modification du produit : \" $name \" effectué avec succès</div>";
+            return "<div class='alert alert-success' style='margin-top:50px;' role='alert'>Modification du produit : \" $name \" effectué avec succès</div>";
             break;
         case 'suppr':
-            return "<div class='alert alert-success' role='alert'>Suppression du produit effectué avec succès</div>";
+            return "<div class='alert alert-success' style='margin-top:50px;' role='alert'>Suppression du produit effectué avec succès</div>";
             break;
         case 'empty':
-            return "<div class='alert alert-warning' role='alert'>Il semblerait que le formulaire ne soit pas entièrement rempli, veuillez le compléter s'il vous plait.</div>";
+            return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Il semblerait que le formulaire ne soit pas entièrement rempli, veuillez le compléter s'il vous plait.</div>";
         case 'incorrect':
-            return "<div class='alert alert-warning' role='alert'>Pseudo ou mot de passe incorrect, veuillez réessayer</div>";
+            return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Pseudo ou mot de passe incorrect, veuillez réessayer</div>";
             break;
         case 'connected':
-            return "<div class='alert alert-warning' role='alert'>Bonjour $name !</div>";
+            return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Bonjour $name !</div>";
             break;
         case 'error':
-            return "<div class='alert alert-warning' role='alert'>Une erreur est survenue, veuillez réessayer ou contacter l'équipe Légumalin</div>";
+            return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Une erreur est survenue, veuillez réessayer ou contacter l'équipe Légumalin</div>";
             break;
         default:
             return '';
@@ -181,6 +181,7 @@ function sessionOrCookie($data)
         setcookie('name', $data['name'], time() + 365*24*3600, null, null, false, true);
         setcookie('surname', $data['surname'], time() + 365*24*3600, null, null, false, true);
         setcookie('password', $data['password'], time() + 365*24*3600, null, null, false, true);
+        setcookie('statut', $data['statut'], time() + 365*24*3600, null, null, false, true);
         return;
         #dd($_COOKIE);
     }

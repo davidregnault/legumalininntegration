@@ -13,6 +13,7 @@
         <div class="column between">
             <h1>Actualités</h1>
             <div class="page_description_head">
+                <p>Retrouvez ici des articles rédigés et sélectionnés avec amour, sur l'actualité du monde de la permaculture</p>
             </div>
         </div>
         <div class="column between">

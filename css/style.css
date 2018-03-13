@@ -45,7 +45,8 @@ section {
 }
 .a_propos section, .faq section, .mentions section {
 	background-color: white;
-	border-radius: 20px;
+	border-radius: 6px;
+    padding:10px;
 	margin-bottom: 20px;
 }
 .accueil section {
@@ -60,10 +61,6 @@ h1 {
     margin-bottom: 2%;
 	width: 90%;
 	text-align: left;
-}
-
-.a_propos h1 , .faq h1{
-	color: black;
 }
 
 .h1_marron {
@@ -86,9 +83,10 @@ h2 {
 h3 {
     font-family: 'muli';
     color: #865597;
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-transform: uppercase;
     font-weight: bold;
+    padding-bottom: 3px;
 }
 
 h4 {
@@ -446,11 +444,6 @@ aside #img_aside {
 }
 
 
-.accueil header h1 span{
-	color: #224A1D;
-}
-
-
 
 
 /* CONCEPT */
@@ -601,12 +594,12 @@ aside #img_aside {
 	height: 20%;
 }
 .shop > div.row {
-	justify-content: space-around;
+	justify-content: space-between;
 	height: 80%;
 }
 .shop > div.row > div {
-	width: 27%;
-	height: 70%;
+	width: 30%;
+	height: 90%;
 	display: flex;
 	flex-direction: column;
 	border-radius: 20px;
@@ -630,7 +623,8 @@ aside #img_aside {
 }
 
 .home_prez_product {
-    padding: 10px;
+    padding: 15px;
+    
 }
 
 .shop > div.row > div > div:last-child {
@@ -640,7 +634,7 @@ aside #img_aside {
 	position: relative;
 }
 #shop_product_1 {
-	background-image: url(../img/product_1.jpg);
+	background-image: url(../img/product_3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 0px 0px 20px 20px;
@@ -652,7 +646,7 @@ aside #img_aside {
 	border-radius: 0px 0px 20px 20px;
 }
 #shop_product_3 {
-	background-image: url(../img/product_3.jpg);
+	background-image: url(../img/product_1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 0px 0px 20px 20px;
@@ -971,15 +965,28 @@ height: 25px;
 }
 
 /* PAGE FAQ */
+
 .faq {
 	height: initial;
 }
 .faq > main{
 	margin-bottom: 5%;
 }
-.faq main > section {
-	width: 70%;
+
+.faq .section_filtre {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1%;
+    height: 30vh;
+    background-image: url(../img/faq_bandeau.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
+.faq main > section > div {
+    align-self: left;
+}
+
 .faq main > section > section{
 	width: 100%;
 	height: 100%;
@@ -1106,14 +1113,22 @@ height: 25px;
 
 /* PAGE A PROPOS */
 
+.a_propos .section_filtre {
+    width: 100%;
+    margin: 0;
+    margin-top: -50px;
+    margin-bottom: 1%;
+    height: 30vh;
+    background-image: url(../img/pots.jpg);
+    background-position: center;
+}
 .a_propos main{
 	height: initial;
 }
 .a_propos h3{
 	text-align: left;
 	width: 100%;
-	margin-bottom: 2%;
-	color: #926755;
+	margin-bottom: 1%;
 }
 .a_propos p{
 	width: 100%;
@@ -1128,8 +1143,44 @@ height: 25px;
 	width: 100%;
 }
 .fiche_equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	text-align: center;
 	width: 30%;
+}
+
+.equipe_img {
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: 150px;
+    margin-bottom: 2px;
+}
+
+.charlotte {
+    background-image: url(../img/charlotte.jpg);
+}
+
+.lara {
+    background-image: url(../img/lara.jpg);
+}
+
+.david {
+    background-image: url(../img/david.jpg);
+}
+
+.quentin {
+    background-image: url(../img/quentin.jpg);
+}
+
+.edouard {
+    background-image: url(../img/edouard.jpg);
+}
+
+.equipe_description {
+    font-family: 'Muli', sans-serif;
 }
 
 /* PAGE ACTUALITES*/
@@ -1153,6 +1204,7 @@ height: 25px;
 
 .row_article {
     width: 80%;
+    justify-content: center;
 }
 
 .col_article {
@@ -1164,6 +1216,7 @@ height: 25px;
     display: flex;
     flex-direction:column;
     align-items:center;
+    justify-content: space-between;
 }
 
 .article_titre {
@@ -1191,12 +1244,12 @@ font-size: 1.8em;
 
 .double_img {
     width:50%;
-    height: 500px;
 }
 
 .double_img img {
     width:100%;
 }
+
 
 /*PAGE TUTORIELS*/
 
@@ -1534,6 +1587,13 @@ section.section_fiche > div:last-child > div {
 	font-size: 1.5em;
 
 }
+
+.filter_name {
+    font-family: 'muli';
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight:bold;
+}
 .section_filtre .filtres_boutique > div > div{
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -1573,8 +1633,10 @@ section.section_fiche > div:last-child > div {
 	background-image: url("../img/product_2.jpg");
 }
 .prix-produit {
-	font-size: 1.5em;
-	color: #E2450E;
+    font-family:'muli';
+    text-transform: uppercase;
+    font-weight:bold;
+	font-size: 1.7em;
 }
 
 
@@ -1653,9 +1715,27 @@ section.section_fiche > div:last-child > div {
     color:#387c31;
 }
 
+.green_bright {
+    color:#4CB050;
+}
+
+
+.chocolat {
+    color:#532F21;
+}
+
 .marron_clair {
     color:#926755;
 }
+
+.orange {
+    color:#E2450E;
+}
+
+.sienne {
+    color:#A03F18;
+}
+
 .displayNone {
 	display: none !important;
 }

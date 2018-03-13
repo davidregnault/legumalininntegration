@@ -1,8 +1,8 @@
 <?php
-    require_once('includes/requires.inc.php');
+    require_once('../include/requires.inc.php');
 
     $TITLE = 'Affichage produits';
-    require_once('includes/header.inc.php');
+    require_once('../include/header.inc.php');
 
 if(!empty($_GET['delete']) && is_numeric($_GET['delete']))
 {
@@ -19,19 +19,28 @@ if(!empty($_GET['delete']) && is_numeric($_GET['delete']))
     header('Location:index.php');
 }
 
+isFlashMessage();
 
-$connected = adminConnexion();
+$connected = isConnected();
 
-if ($connected)
+if ($connected && !empty($_COOKIE['surname']))
 {
-    flashMessage('connected');
+    echo 'Bonjour ' . $_COOKIE['surname'];
 }
 
-isFlashMessage();
+#dd($connected);
 $productsArray = selectAll('products');
 ?>
 
-    <?php require_once('includes/nav.inc.php'); ?>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="">Utilisateurs</a></li>
+        <li role="presentation"><a href="">Produits</a></li>
+        <li role="presentation"><a href="">Actualités</a></li>
+
+        <?= ($connected) ? '<li role="presentation"><a href="../logout_treatment.php">Se déconnecter</a></li>' : '<li role="presentation"><a href="../connexion_treatment.php">Se Connecter</a></li>'; ?>
+    </ul>
+
     <a href="form_add.php">+ nouveau produit</a>
     <?php
         if(!empty($productsArray)) :
@@ -79,7 +88,7 @@ $productsArray = selectAll('products');
         </div>
     <?php
         endif;
-#        dd($productsArray);
+        dd($productsArray);
     ?>
 
 	<!--<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>-->

@@ -17,13 +17,10 @@ if ( (!empty($_GET['statut']) && $_GET['statut'] === 'jardinier') || (!empty($_G
         $checked_p = 'checked';
     }
 }
-else
-{
-    header('Location:index.php');
-}
+
 ?>
 
-<h1>Bonjour, vous souhaitez vous enregistrer en tant que <?= $statut; ?> !</h1>
+<h1><?= (!empty($statut)) ? "Bonjour, vous souhaitez vous enregistrer en tant que $statut !" : "Créez votre compte Légumalin ! "  ?></h1>
 
     <form method="post" action="register_treatment.php">
         <div class="form-group">

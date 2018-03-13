@@ -1,3 +1,24 @@
+<?php
+require_once('include/functions.php');
+
+$connected = isConnected();
+
+if ($connected && $_COOKIE['statut'] == 1)
+{
+     $redirect = 'profil_proprietaire.php';
+
+} elseif($connected && $_COOKIE['statut'] == 2)
+{
+     $redirect = 'profil_jardinier.php';
+}elseif(!$connected)
+{
+     $redirect = 'login.php';
+} else
+{
+    $redirect = '';
+}
+
+?>
 <header>
     <img id="btn_nav" class="desktop_display_none" src="img/menu.png">
     <nav class="row middle nav_home_mobile nav_mobile_fermer">
@@ -18,13 +39,13 @@
             <div class="row between">
                 <div class="column middle" id="btn_aside"><img id="img_aside" src="img/aside-left-arrow.png"></div>
                 <div class="row">
-                    <a href=""><img src="img/shop.png"></a>
-                    <a href="profil_proprietaire.php"><img src="img/user.png"></a>
+                    <a href="boutique.php"><img src="img/shop.png"></a>
+                    <a href="<?= $redirect ?>"><img src="img/user.png"></a>
                 </div>
             </div>
         </aside>
 
     <div class="column middle">
-        <h1>Le partage de potager<br /> <span class="green">bio</span> et responsable</h1>
+        <h1>Le partage de potager<br /> <span class="green_bright">bio</span> et responsable</h1>
     </div>
 </header>

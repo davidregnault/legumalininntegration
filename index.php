@@ -69,7 +69,7 @@
 		</div>
 		<div class="row middle">
 			<div>
-				<div>
+				<div class="home_prez_product">
 					<h3 class="marron_clair">GRAINES BETTERAVES CHIOGGIA</h3>
 					<p>Variété de betteraves originale. D'excellente qualité gustative, cette betterave décorera gaiement vos plats. </p>
 				</div>
@@ -81,9 +81,9 @@
 			</div>
 
 			<div>
-				<div>
+				<div class="home_prez_product">
 					<h3 class="marron_clair">FERTILISANT BIOLOGIQUE COMPLET</h3>
-					<p>Fertilisant organique completPour des légumes plus savoureux, plus volumineux et plus abondants.</p>
+					<p>Fertilisant organique complet pour des légumes plus savoureux, plus volumineux et plus abondants.</p>
 				</div>
 				<div id="shop_product_2">
 					<div class="btn brown-btn">
@@ -91,8 +91,8 @@
 					</div>
 				</div>
 			</div>
-			<div>
-				<div>
+			<div class="col">
+				<div class="home_prez_product">
 					<h3 class="marron_clair">GRAINES AUBERGINES BARBENTANE</h3>
 					<p>Variété rustique résistante à la plupart des maladies. Elle produit des fruits allongés en forme de massue, violet foncé. </p>
 				</div>

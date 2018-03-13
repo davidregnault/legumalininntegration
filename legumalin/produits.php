@@ -6,7 +6,7 @@ require_once('includes/header.inc.php');
 
 if(!empty($_GET['delete']) && is_numeric($_GET['delete']))
 {
-    $delete = deleteGeneric('posts', 'post_id', 'delete');
+    $delete = deleteGeneric('products', 'product_id', 'delete');
 
     if($delete === 1)
     {
@@ -27,21 +27,21 @@ if ($connected)
 }
 isFlashMessage();
 
-$postsArray = selectAll('posts');
+$productsArray = selectAll('products');
 ?>
 
 <?php require_once('includes/nav.inc.php'); ?>
 
 <a href="addForm_posts.php">+ nouvel article</a>
 <?php
-if(!empty($postsArray)) :
+if(!empty($productsArray)) :
     ?>
     <table class="table">
         <thead class="thead-dark">
         <tr>
             <?php
 
-            foreach($postsArray[0] as $key => $eachPost):
+            foreach($productsArray[0] as $key => $eachProduct):
                 ?>
 
                 <th scope="col"><?= $key; ?></th>
@@ -54,18 +54,18 @@ if(!empty($postsArray)) :
         </thead>
         <tbody>
         <?php
-        foreach($postsArray as $eachPost):
+        foreach($productsArray as $eachProduct):
             ?>
             <tr>
                 <?php
-                foreach($eachPost as $key => $v):
+                foreach($eachProduct as $key => $v):
                     ?>
                     <td><?= $v; ?></td>
                 <?php
                 endforeach;
                 ?>
-                <td><a href="addForm_posts.php?modif=<?= $eachPost['post_id']; ?>">Modifier</a></td>
-                <td><a href="?delete=<?= $eachPost['post_id']; ?>">Delete</a></td>
+                <td><a href="form_add.php?modif=<?= $eachProduct['product_id']; ?>">Modifier</a></td>
+                <td><a href="?delete=<?= $eachProduct['product_id']; ?>">Delete</a></td>
             </tr>
         <?php
         endforeach;
@@ -80,7 +80,7 @@ else:
     </div>
 <?php
 endif;
-#dd($postsArray);
+#dd($productsArray);
 ?>
 
 <!--<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>-->

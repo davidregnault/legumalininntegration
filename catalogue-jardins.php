@@ -19,20 +19,20 @@
 			<div></div>
 			<div class="row between">
 				<div class="filtres_boutique">
-					<span>Filtres</span>
+					<span class="legende blanc">Filtres</span>
 					<div class="row between">
-						<div>Fruits</div>
-						<div>Légumes</div>
-						<div>Fleurs</div>
+						<div class="filter_name">Fruits</div>
+						<div class="filter_name">Légumes</div>
+						<div class="filter_name">Fleurs</div>
 					</div>
 				</div>
 				<div class="filtres_boutique">
-					<span>Par département</span>
+					<span class="legende blanc">Par département</span>
 					<div class="row between">
-						<div>Automne</div>
-						<div>Hiver</div>
-						<div>Printemps</div>
-						<div>Eté</div>
+						<div class="filter_name">Automne</div>
+						<div class="filter_name">Hiver</div>
+						<div class="filter_name">Printemps</div>
+						<div class="filter_name">Eté</div>
 					</div>
 				</div>
 			</div>
@@ -45,12 +45,12 @@
 		</div>
 		<div>
 			<div>
-				<div class="titre-fiche"><span>Titre du jardin</span></div>
-				<div class="adresse-jardin">Adresse : <span>25 Place de la Bourse, 75002 Paris</span></div>
-				<div class="proprietaire-jardin">Proposé par : <span>Jean Dupont</span></div>
-				<div class="distance-jardin">Distance : <span>34Km</span></div>
-				<div class="taille-jardin">Taille : <span>80 m2</span></div>
-				<div class="date-publication-jardin">Pulié le : <span>08-03-2018</span></div>
+				<div class="titre-fiche"><h4 class="green">Titre du jardin</h4></div>
+                <div class="adresse-jardin"><p>Adresse : <span>25 Place de la Bourse, 75002 Paris</span></p></div>
+				<div class="proprietaire-jardin"><p>Proposé par : <span>Jean Dupont</span></p></div>
+				<div class="distance-jardin"><p>Distance : <span>34Km</span></p></div>
+				<div class="taille-jardin"><p>Taille : <span>80 m2</span></p></div>
+				<div class="date-publication-jardin"><p class="tchat_date">Publié le : <span>08-03-2018</span></p></div>
 				<div class="btn green-btn"><a href="fiche-jardin.php">En savoir plus</a></div>
 			</div>
 		</div>

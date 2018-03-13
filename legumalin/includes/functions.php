@@ -222,14 +222,15 @@ function isFlashMessage()
     return;
 }
 
-function route($name)
+function adminConnexion()
 {
-    switch($name)
+    $connected = isConnected();
+
+    if ($connected && !empty($_COOKIE['surname']) && $_COOKIE['pseudo'] === 'legumalin')
     {
-        case '':
-            break;
-        default:
-            header('Location:404.php');
-            break;
+        return $connected;
+    } else
+    {
+        header('Location:../index.php');
     }
 }
