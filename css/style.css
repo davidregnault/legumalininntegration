@@ -1066,6 +1066,8 @@ height: 25px;
 	bottom: 0;
 	color: white;
 	width: 100%;
+	margin: 0;
+	border-radius: 0;
 }
 #cookies > div {
 	height: 100%;
@@ -1139,8 +1141,12 @@ height: 25px;
 	height: 70vh;
 	width: 80%;
 	padding-bottom: 5%;
-}.a_propos section:last-child > div{
+}
+.a_propos section:last-child > div{
 	width: 100%;
+}
+.a_propos section:last-child > div:last-child {
+	width: 70%;
 }
 .fiche_equipe {
     display: flex;
@@ -1156,7 +1162,7 @@ height: 25px;
     height: 150px;
     border-radius: 50%;
     background-size: 150px;
-    margin-bottom: 2px;
+    margin-bottom: 2%;
 }
 
 .charlotte {
@@ -1209,6 +1215,7 @@ height: 25px;
 
 .col_article {
     width: 50%;
+    height: 100%;
     background-color: white;
     border-radius: 6px;
     padding: 20px;
@@ -1218,7 +1225,9 @@ height: 25px;
     align-items:center;
     justify-content: space-between;
 }
-
+.col_article > *{
+	margin-bottom: 5%;
+}
 .article_titre {
     font-family: 'muli';
    color: #865597;
