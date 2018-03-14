@@ -18,6 +18,30 @@ var s ='open';
 			}	
 		});
 
+
+/* SCRIPT ANIMATION NAV */
+
+var btn_nav = document.querySelector('#btn_nav');
+var span_nav = document.querySelector('#span_nav_bg');
+var nav = document.querySelector('nav');
+var u ='close';
+
+		btn_nav.addEventListener('click', function() {
+
+				nav.classList.remove("nav_mobile_fermer");
+				nav.classList.add("nav_mobile_ouvert");
+				u = "open";
+
+		});
+		span_nav.addEventListener('click', function() {
+
+				nav.classList.remove("nav_mobile_ouvert");
+				nav.classList.add("nav_mobile_fermer");
+				u ="close";
+		});
+
+
+
 /* SCRIPT cookies */
 
 var etatCookies;
