@@ -1,5 +1,4 @@
 <?php
-
     require_once('include/requires.inc.php');
 
     $select = selectOne('users', 'login', $_COOKIE['pseudo'], PDO::PARAM_INT);
@@ -85,7 +84,7 @@
                 <p class="blanc">Les jardins que je mets à disposition.</p>
             </div>
             <div class="btn white-btn">
-                <a href="" class="green">
+                <a href="garden_register.php" class="green">
                     Ajouter un jardin
                 </a>
             </div>
@@ -123,7 +122,6 @@
     </div>
 
 </main>
-<?php include "include/cookies.php"; ?>
 <?php include "include/footer.php"; ?>
 <script src="js/script.js"></script>
 </body>

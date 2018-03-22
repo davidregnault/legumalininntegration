@@ -147,6 +147,15 @@ function flashMessage($element, $name = null)
         case 'incorrect':
             return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Pseudo ou mot de passe incorrect, veuillez réessayer</div>";
             break;
+        case 'used':
+            return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Pseudo déjà utilisé, veuillez en choisir un différent.</div>";
+            break;
+        case 'email_used':
+            return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Email déjà utilisé, veuillez en choisir une différent.</div>";
+            break;
+        case 'password':
+            return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Les deux mots de passes sont différents</div>";
+            break;
         case 'connected':
             return "<div class='alert alert-warning' style='margin-top:50px;' role='alert'>Bonjour $name !</div>";
             break;

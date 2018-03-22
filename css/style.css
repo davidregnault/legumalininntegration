@@ -1513,21 +1513,6 @@ section.section_fiche> div {
 	border-radius: 20px 0 0 20px;
 }
 
-/* IMAGES CATALOGUE JARDINS */
-
-
-.catalogue-jardin section.section_fiche:first-child > div:first-child {
-	background-image: url("../img/bg_jardin_1.jpg");
-}
-.catalogue-jardin section.section_fiche:nth-child(2)> div:first-child {
-	background-image: url("../img/bg_jardin_2.jpg");
-}
-.catalogue-jardin section.section_fiche:nth-child(3)> div:first-child {
-	background-image: url("../img/bg_jardin_3.jpg");
-}
-.catalogue-jardin section.section_fiche:nth-child(4)> div:first-child {
-	background-image: url("../img/bg_jardin_4.jpg");
-}
 
 /* FICHE DE PRESENTATION PRODUIT & JARDIN */
 

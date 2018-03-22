@@ -5,7 +5,7 @@ require_once('include/pdo.inc.php');
 if(isset($_POST['soumettre'])) {
     if(!empty($_POST['pseudo']) && !empty($_POST['message']))
     {
-        $pdo->query("INSERT INTO tchat (pseudo, message, date_heure) VALUES ('$_POST[pseudo]', '$_POST[message]', NOW())");
+        $pdo->query("INSERT INTO tchat (pseudo, message, date_heure) VALUES ('".addslashes($_POST["pseudo"])."', '".addslashes($_POST["message"])."', NOW())");
     }
 }
 

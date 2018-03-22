@@ -22,29 +22,27 @@
         }
         elseif ($uniqueLogin)
         {
-            dd('Login déjà utilisé');
+            $_SESSION['flashMessage'] = flashMessage('used');
+            header('Location:register.php');
         }
     }
-    if (!empty($email))
-    {
-        $uniqueEmail = selectOne('users', 'email', $email);
+    if (!empty($email)) {
+        $uniqueEmail = selectOne ( 'users', 'email', $email );
 
-        if ($uniqueEmail == false )
-        {
+        if ($uniqueEmail == false) {
             $emailOk = $email;
-        }
-        elseif ($uniqueEmail)
-        {
-            dd('Email déjà utilisé');
+        } elseif ($uniqueEmail) {
+            $_SESSION[ 'flashMessage' ] = flashMessage ( 'email_used' );
+            header ( 'Location:register.php' );
         }
     }
-
     if ($password == $confirmation)
     {
         $pass_hash = password_hash($password, PASSWORD_DEFAULT);
     } elseif ($password !== $confirmation)
     {
-        dd('Les deux mots de passes sont différents, veuillez les retaper');
+        $_SESSION[ 'flashMessage' ] = flashMessage ( 'password' );
+        header ( 'Location:register.php' );
     }
 
     if (!empty($loginOk) && !empty($pass_hash) && !empty($emailOk)) :

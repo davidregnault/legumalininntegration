@@ -1,3 +1,19 @@
+<?php
+    require_once('include/requires.inc.php');
+
+    if (!empty($_GET['id_garden']) && is_numeric($_GET['id_garden']))
+    {
+        $garden = selectOne('jardins', 'id', $_GET['id_garden'], PDO::PARAM_INT);
+        if(!$garden)
+        {
+            header('Location:404.php');
+        }
+    }
+    else
+    {
+        header('Location:404.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,26 +32,24 @@
 			<input type="" name="">
 		</div>
 		<div class="column between">
-
 		</div>
 	</section>
 
-
 <main class="column">
 	<div class="column">
-			<div class="row middle retour_produits"><a class="row middle around" href="catalogue-jardins.php"><img src="img/left-arrow.svg"><div>Retour</div></a></div>
+			<div class="row middle retour_produits"><a class="row middle around" href="catalogue-jardins.php"><img src="img/left-arrow.svg"><div class="legende black">Retour</div></a></div>
 		</div>
 	<section class="row middle section_fiche">
-		<div></div>
+		<div style="background-image: url('img/<?= $garden['image']; ?>')"></div>
 		<div>
 			<div>
-				<div class="titre-fiche"><span>Titre du jardin</span></div>
-				<div class="adresse-jardin">Adresse : <span>25 Place de la Bourse, 75002 Paris</span></div>
-				<div class="proprietaire-jardin">Proposé par : <span>Jean Dupont</span></div>
-				<div class="distance-jardin">Distance : <span>34Km</span></div>
-				<div class="taille-jardin">Taille : <span>80 m2</span></div>
-				<div class="date-publication-jardin">Pulié le : <span>08-03-2018</span></div>
-				<div class="btn green-btn"><a href="fiche-jardin.php">S'inscrire</a></div>
+				<div class="titre-fiche"><h4><?= $garden['title']; ?></h4></div>
+                <div class="adresse-jardin"><p>Adresse : <span><?= $garden['adresse']; ?></span></p></div>
+                <div class="proprietaire-jardin"><p>Proposé par : <span><?= $garden['proprietaire']; ?></span></p></div>
+                <div class="distance-jardin"><p>Distance : <span><?= $garden['distance']; ?> Km</span></p></div>
+                <div class="taille-jardin"><p>Taille : <span><?= $garden['size']; ?> m2</span></p></div>
+                <div class="date-publication-jardin"><p class="tchat_date">Publié le : <span><?= $garden['updated_at']; ?></span></p></div>
+                <div class="btn green-btn"><a href="fiche-jardin.php">Prenez contact ! </a></div>
 			</div>
 		</div>
 	</section>
@@ -52,7 +66,6 @@
 
 
 
-<?php include "include/cookies.php"; ?>
 <?php include "include/footer.php"; ?>
 <script src="js/script.js"></script>
 </body>
