@@ -5,7 +5,9 @@
 isFlashMessage();
 
 ?>
+<main class="login">
 <h1>Page de connexion </h1>
+<section class="column middle">
 
         <form method="post" action="connexion_treatment.php" style="padding: 5px;">
             <div class="form-group">
@@ -20,5 +22,7 @@ isFlashMessage();
         </form>
 
         <a href="register.php">Créer un compte Légumalin !</a>
+</section>
+</main>
 </body>
 </html>

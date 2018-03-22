@@ -34,12 +34,13 @@ $jardin = selectAll("jardins");
 					</div>
 				</div>
 				<div class="filtres_boutique">
-					<span class="legende blanc">Par département</span>
+					<span class="legende blanc">Zone géographique</span>
 					<div class="row between">
-						<div class="filter_name">Automne</div>
-						<div class="filter_name">Hiver</div>
-						<div class="filter_name">Printemps</div>
-						<div class="filter_name">Eté</div>
+						<div class="filter_name">Paris<br />(75)</div>
+						<div class="filter_name">IDF<br />(Ouest)</div>
+						<div class="filter_name">IDF<br />(Est)</div>
+						<div class="filter_name">IDF<br />(Sud)</div>
+						<div class="filter_name">IDF<br />(Nord)</div>
 					</div>
 				</div>
 			</div>

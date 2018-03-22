@@ -23,7 +23,7 @@
 <?php include "include/header.php"; ?>
 
 
-<section class="row middle section_filtre">
+<section class="row middle around section_filtre">
     <div class="column between">
         <h1>Je suis propriétaire</h1>
         <div class="page_description_head">
