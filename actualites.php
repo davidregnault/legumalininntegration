@@ -121,6 +121,10 @@
     </div>
 
 </main>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4149194ada9efc293115450f5bcdbb087935cb45
 <?php include "include/footer.php"; ?>
 <script src="js/script.js"></script>
 </body>
