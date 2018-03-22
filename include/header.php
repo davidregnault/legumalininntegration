@@ -19,6 +19,7 @@ if ($connected && $_COOKIE['statut'] == 1)
 }
 ?>
 <header class="type_header">
+    <img id="btn_nav" class="desktop_display_none" src="img/menu.png">
     <nav class="column middle">
         <ul class="row middle">
             <li><a href="faq.php">forum</a></li>
